@@ -1,0 +1,109 @@
+/* Main content */
+.weather {
+	background-color: #aeecff;
+	padding: 25px;
+	border-radius: 50px;
+}
+.weather-bg {
+	background-image: url(../images/backgrounds/cloudy.jpg);
+}
+.air-quality {
+	background-image: url(../images/backgrounds/windy.jpg);
+}
+.weather-bg, .air-quality {
+	background-size: auto 500px;
+	background-repeat: no-repeat;
+	background-blend-mode: unset;
+}
+.weather .weather-day { display: inline-block;}
+.weather .weather-day .image-box {
+	background-color: white;
+	border-radius: 50%;
+	text-align: center;
+	width: 20%;
+	padding: 15px;
+	float: left;
+}
+.weather .weather-day .text-box {
+	margin-left: 15px;
+	float: left;
+}
+.weather .weather-day .text-box h1 {
+	margin: 0;
+	font-weight: bold;
+	color: #1b293d;
+}
+.weather .weather-day .text-box p {
+	font-size: 15px;
+	font-weight: bold;
+	color: #1b293d;
+}
+.weather .degrees .text-box { display: inline-flex; }
+.weather .degrees .text-box h1 {
+	margin: 15px 0 15px 0;
+	font-size: 45px;
+	font-weight: bold;
+	color: #1b293d;
+}
+.weather .degrees p {
+	color: #1b293d;
+}
+.weather .degrees .text-box span{
+	vertical-align: middle;
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: white;
+	border-radius: 15px;
+	padding: 8px;
+	height: 38px;
+}
+.weather .weather-columns { 
+	text-align: center;
+ }
+.weather .weather-columns .pressure,
+.weather .weather-columns .visiblity, 
+.weather .weather-columns .humadity,
+.weather .weather-columns .wind  {
+	background-color: #1b293d;
+	padding: 20px;
+	border-radius: 30px;
+	display: inline-flex;
+	margin: 15px;
+	text-align: center;
+	display: block;
+}
+.weather .weather-columns .visiblity { background-color: #cce16a; }
+.weather .weather-columns .humadity,
+.weather .weather-columns .wind { background-color: white; }
+.weather .weather-columns h1 { font-weight: bold; }
+.weather .weather-columns .pressure h1,
+.weather .weather-columns .pressure p {color: white;}
+.weather .weather-columns .wind .labels { display: flow-root;}
+.weather .weather-columns .wind .labels h1 {font-size: 15px;}
+.weather .weather-columns .wind .labels .good-label {float: left;}
+.weather .weather-columns .wind .labels .hazardous-label {float: right;}
+.weather .weather-columns .wind .progress .progress-bar { background-color: #3ecef9; }
+
+/* Responsive */
+@media screen and (min-width: 1200px) {
+    .weather2 { min-height: 386.9px;}
+    .weather .weather-day .image-box {
+        width: 18%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .weather .weather-day .image-box {
+        width: 10%;
+    }
+    .weather .weather-columns { 
+        display: inline-flex; 
+        width: 100%;
+    }
+    .weather .weather-columns .pressure,
+    .weather .weather-columns .visiblity, 
+    .weather .weather-columns .humadity {
+        width: 30%;
+    }
+    .weather .weather-columns .wind { width: 100%; }
+}

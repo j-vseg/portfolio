@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="map">Carte</string>
+    <string name="list">Liste</string>
+    <string name="info">Info</string>
+    <string name="settings">Paramètres</string>
+    <string name="language">Langue</string>
+    <string name="detailed">Détails</string>
+    <string name="cities">Villes</string>
+    <string name="streets">Des rues</string>
+    <string name="people">Personnes</string>
+    <string name="btn_en_desc">Ceci est le drapeau de la Grande-Bretagne. Cela peut être utilisé pour changer la langue en anglais.</string>
+    <string name="btn_nl_desc">Ceci est le drapeau des Pays-Bas. Cela peut être utilisé pour changer la langue en néerlandais.</string>
+    <string name="btn_fr_desc">Ceci est le drapeau de la France. Cela peut être utilisé pour changer la langue en français.</string>
+    <string name="popup_title_lang">Langue courante</string>
+    <string name="popup_text_lang">Cette langue est déjà sélectionnée</string>
+    <string name="hello_blank_fragment">Ceci est un fragment vide</string>
+</resources>

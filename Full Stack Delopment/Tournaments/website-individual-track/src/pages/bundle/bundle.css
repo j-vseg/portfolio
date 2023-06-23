@@ -1,0 +1,28 @@
+.dataTables_wrapper {padding: 0;}
+.information {width: 45%;}
+/*.information input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    background-color: #e4e9f7;
+    border: 1px solid #1d1b31;
+}*/
+/*.information textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #1d1b31;
+    background-color: #e4e9f7;
+}*/
+.information button {margin-top: 25px;}
+.materials {
+    margin-left: 50px;
+    width: 45%;
+}
+@media (max-width: 992px) {
+    .materials, .information {width:45%;} 
+}
+@media (max-width: 720px) {
+    .materials, .information {width:100%;} 
+    .materials {margin-top: 50px; margin-left: 0;}
+}

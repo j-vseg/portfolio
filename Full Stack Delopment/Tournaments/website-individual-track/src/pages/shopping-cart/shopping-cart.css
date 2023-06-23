@@ -1,0 +1,12 @@
+.order-overview {
+    margin-left: 125px;
+    background: #f1f5ff;
+    padding: 25px;
+    border-radius: 15px;
+}
+.order-overview .order-item {
+    margin-bottom: 25px;
+}
+.order-overview .order-item h4 {
+    margin-bottom: 5px;
+}

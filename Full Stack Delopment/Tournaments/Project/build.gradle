@@ -1,0 +1,66 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.3'
+	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+	id 'java'
+	id "org.sonarqube" version "3.4.0.2513"
+	id "jacoco"
+}
+
+jacocoTestReport{
+	reports {
+		xml.required = true
+	}
+	dependsOn test
+}
+
+sonarqube {
+	properties {
+		property "sonar.projectKey", "IndividualTrack-SEM3"
+		property "sonar.qualitygate.wait", true
+		property "sonar.login", "admin"
+		property "sonar.password", "SonarQube2022"
+		property "sonar.debug", true
+	}
+}
+tasks.named("sonarqube").configure{
+	dependsOn jacocoTestReport
+}
+
+group = 'nl.fontys.sem3'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation ('org.springframework.boot:spring-boot-starter-websocket')
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.7.3'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.7.4'
+	implementation 'org.jetbrains:annotations:20.1.0'
+	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.31'
+	implementation "org.springframework.boot:spring-boot-starter-security"
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
+    testImplementation 'junit:junit:4.13.1'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.2'
+	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.2'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation "org.mockito:mockito-inline:3.+"
+	testImplementation 'org.springframework.security:spring-security-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+bootJar { duplicatesStrategy = DuplicatesStrategy.EXCLUDE }

@@ -1,0 +1,165 @@
+/* Side bar */
+.weather-today-btn {
+    position: absolute;
+	top: 0;
+	right: 0;
+    display: none;
+    border: none;
+    color: #3ecef9;
+    background-color: transparent;
+    z-index: 999;
+}
+.weather-today-btn i {
+    color: #1b293d;
+    font-size: 30px;
+}
+.weather-today {
+	margin-top: 25px;
+	padding: 25px;
+	background-color:#f6f6f6;
+	height: 100%;
+    text-align: center;
+}
+.weather-today .weather-select {
+	border-bottom: 2px solid #e1e4ea;
+	padding-bottom: 10px;
+}
+.weather-today .weather-select .weather-country {
+	width: 100%;
+	margin-top: 15px;
+	display: none;
+}
+.weather-today .weather-select .weather-country .text-box {
+	width: 80%;
+	text-align: start;
+}
+.weather-today .search-city input {
+	background-color: white;
+	color: #1b293d;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.weather-today .search-city input::placeholder {
+    color: #1b293d;
+	font-weight: bold;
+}
+.weather-today .search-city i {
+	position: absolute;
+	margin-top: 27px;
+	right: 55px;
+	color: #3ecef9;
+}
+.weather-today .weather-select .weather-country:after {
+	color: #3ecef9;
+}
+.weather-today .weather-select .degrees {
+	width: 20%;
+	margin: 0;
+}
+.weather-today .weather-select .degrees h1 {
+	color: #3ecef9;
+}
+ 
+.weather-today .sun-infomation {
+	display: none;
+	margin-top: 15px;
+}
+/*
+.weather-today .sun-infomation img {
+	height: 205px;
+	width: 200px;
+}
+/* *** */
+.weather-today .uv-index {
+	background-color: #1b293d;
+	padding: 20px;
+	border-radius: 30px;
+	display: inline-flex;
+	margin-top: 25px;
+	display: none;
+}
+.weather-today .weather-prediction {
+	margin-top: 25px;
+	text-align: center;
+	display: none;
+}
+.weather-today .uv-index .image-box, 
+.weather-today .weather-prediction .weather .image-box {
+	width: 25%;
+}
+.weather-today .uv-index .image-box img, 
+.weather-today .weather-prediction .weather .image-box img {
+	width: 65%;
+	margin-top: 5px;
+}
+.weather-today .uv-index .text-box h1, 
+.weather-today .uv-index .text-box p {
+	color: white;
+}
+.weather-today .uv-index .text-box h1 span {
+	vertical-align: middle;
+	margin-left: 10px;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #cce16a;
+	border-radius: 15px;
+	padding: 6px;
+}
+.weather-today .uv-index .text-box p,
+.weather-today .weather-prediction .weather .text-box p, 
+.weather-today .weather-prediction .weather .degrees p { 
+	font-size: 12px;
+	margin: 0;
+}
+.weather-today .weather-prediction h1 {font-weight: bold;}
+.weather-today .weather-prediction .weather {
+	margin-bottom: 12px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 30px;
+	display: inline-flex;
+}
+.weather-today .weather .text-box {
+	width: 50%;
+}
+.weather-today .weather-prediction .weather .text-box h1 { margin: 0;}
+.weather-today .weather-prediction .weather .degrees {
+	width: 25%;
+}
+.weather-today .weather-prediction .weather .degrees p { color: #1b293d; }
+.weather-today .no-city { 
+	margin-top: 50px;
+}
+.weather-today .no-city h1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/* Responsive */
+@media screen and (min-width: 1200px) {
+    .weather-today-btn { display: block;}
+    .weather-today {
+        overflow-y: scroll;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 25px;
+        width: 20%;
+        background-color:#f6f6f6;
+        height: 100%;
+        margin-top: 0;
+        padding-right: 45px;
+        border-left: #1b293d 1px solid;
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .weather-today { display: block !important; }
+}

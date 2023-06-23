@@ -1,0 +1,26 @@
+.projects { margin-top: 75px; }
+.project-card { 
+    display: inline-block;
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+}
+.project-card .title-box { text-align: center; }
+.project-card .text-box { min-height: 280px; }
+
+#weatheristics { background-color: rgba(0, 213, 255, 0.2); }
+#vegiscan { background-color: rgba(158, 232, 192, 0.3); }
+#stolpersteine { background-color: rgba(219, 175, 19, 0.2); }
+
+@media screen and (max-width: 768px) {
+    #stolpersteine img { 
+        width: 150px; 
+        height: auto;
+    }
+}
+@media screen and (max-width: 576px) {
+    #stolpersteine img { 
+        height: 150px; 
+        width: auto;
+    }
+}

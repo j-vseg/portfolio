@@ -1,0 +1,36 @@
+.table-wrapper {padding: 50px; background-color: #f1f5ff; border-radius: 25px;}
+table tbody tr .action, table tbody tr .bundle-action {width: 20%;}
+table tbody tr .action button {/*width: 44%; */margin: 5px;} 
+table tbody tr .bundle-action button {width: 95%; margin: 5px;}
+@media (max-width: 720px) {
+    .dataTables_wrapper {padding: 25px;}
+    table tbody tr .action button {width: 100%; margin: 5px;}
+}
+
+nav .pagination .page-item {
+    border: 1px solid #11101d;
+}
+nav .pagination .page-item .page-link {
+    background-color: #f1f5ff;
+    color: #11101d;
+}
+nav .pagination .disabled .page-link {
+    color: #696973;
+}
+nav .pagination .page-item .page-link:hover {
+    background-color: #d1ddff;
+    color: #11101d;
+}
+.search-bar {
+    float: right;
+    width: 50%;
+}
+.search-bar button {
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+    border: 1px solid #11101d;
+}
+.search-bar button:hover {
+    background-color: #11101d !important;
+    color: white !important;
+}

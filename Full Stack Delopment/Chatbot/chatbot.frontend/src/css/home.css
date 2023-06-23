@@ -1,0 +1,55 @@
+.home {
+    margin-top: 75px;
+    text-align: center;
+}
+.home .search-vehicle h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+.home .search-vehicle h1 span {color: #1da15e;}
+.home .search-vehicle, .home .search-category .ad{
+    background-color: #1d1d1a;
+    color: white;
+    padding: 25px;
+}
+.home .search-category .ad{background-color: #f2f2f2;} 
+.home input[type="text"] {
+    background-color: white;
+    border: 1px solid black;
+}
+.home input[type="button"] { background: #0d6efd;}
+.home .input-group-prepend { margin-top: 8px;}
+.home .input-group-prepend .input-group-text {    
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.home .show-results {
+    margin-top: 8px;
+    background: #1da15e !important;
+}
+
+.home .search-category { margin: 75px 0 75px 0;}
+.home .search-category h1 { color: black !important; }
+.home .search-category .category {margin: 75px 0 75px 0;}
+.home .search-category .category i, 
+.home .search-category .category label {
+    font-size: 60px;
+    display: block;
+}
+.home .search-category .category label { font-size: 15px;}
+.home .search-category .category { margin-top: 25px; }
+.home .search-category .category .icon-text { margin-top: 10px;}
+.home .search-category .ad { 
+    box-shadow: 5px  5px 5px lightgray; 
+    text-align: start;
+}
+.home .search-category .ad h1 { padding-top: 35px; }
+
+.home .advantages {margin-bottom: 75px;}
+.home .advantages .icon, .home .advantages .icon-text { display: inline-block;}
+.home .advantages .icon-text { width: 75%; }
+.home .advantages i {
+    font-size: 45px;
+    margin-right: 15px;
+    color: #1da15e;
+}

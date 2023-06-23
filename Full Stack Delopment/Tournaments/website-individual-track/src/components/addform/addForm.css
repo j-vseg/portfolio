@@ -1,0 +1,7 @@
+#addForm, #modifyForm {
+    padding: 15px;
+    border: 1px solid #11101d;
+    border-radius: 10px;
+    display: none;
+}
+.card-header h2 i {float: right;}

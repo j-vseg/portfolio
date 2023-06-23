@@ -1,0 +1,26 @@
+.dataTables_wrapper {padding: 50px; width: 100%;}
+table tbody tr .action, table tbody tr .bundle-action {width: 20%;}
+table tbody tr .action button {width: 44%; margin: 5px;}
+table tbody tr .bundle-action button {width: 95%; margin: 5px;}
+@media (max-width: 720px) {
+    .dataTables_wrapper {padding: 25px;}
+    table tbody tr .action button {width: 100%; margin: 5px;}
+}
+
+nav .pagination .page-item {
+    border: 1px solid #11101d;
+}
+nav .pagination .page-item .page-link {
+    background-color: #f1f5ff;
+    color: #11101d;
+}
+.col-12 nav .pagination .page-item .page-link {
+    background-color: #e4e9f7;
+}
+nav .pagination .disabled .page-link {
+    color: #696973;
+}
+nav .pagination .page-item .page-link:hover {
+    background-color: #d1ddff;
+    color: #11101d;
+}

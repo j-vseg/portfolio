@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailed.DetailedFragment">
+
+    <TextView
+        android:id="@+id/txtDetailedTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detailed"
+        android:textAlignment="center"
+        android:textColor="@color/tartiary"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNavigationBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/icon_arrow_back_24"
+        android:textColor="@color/tartiary"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/tartiary"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Loading..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txtNamePerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/tartiary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtDetailedTitle"
+            tools:src="@tools:sample/avatars" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Gender"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:textStyle="bold"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/rGender"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="---"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="Address"
+                    android:padding="3dip"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/rAddress"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="---"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="City"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/rCity"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="---"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="Date of birth"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/rDOB"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="---"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="Date of death"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/rDOD"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="---"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="Place of death"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/rPOD"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="---"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="Reason of death"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/rROD"
+                    android:textSize="20dp"
+                    android:textColor="@color/tartiary"
+                    android:text="---"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

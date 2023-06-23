@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.chatbot {
+    display: grid;
+    height: 100%;
+    place-items: end;
+    z-index: 1;
+}
+::selection{
+    color: #fff;
+    background: #1da15e;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ddd;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #ccc;
+}
+.chat-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.wrapper {
+    width: 350px;
+    height: 523px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-top: 0px;
+    /*opacity: 0;*/
+    display: none;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+    margin: 0 30px 85px 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.wrapper .title{
+    background: #1da15e;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #006fe6;
+    border-radius: 5px 5px 0 0;
+}
+.wrapper .title button {
+  float: right;
+  border: none;
+  background-color: transparent;
+  padding: 0 !important;
+  padding-right: 15px !important;
+  color: white;
+  font-size: 20px;
+  width: auto !important;
+}
+.wrapper .form{
+    padding: 20px 15px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    /*display: none;*/
+}
+.wrapper .form .inbox{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+.wrapper .form .user-inbox{
+    justify-content: flex-end;
+    /*margin: 13px 0;*/
+    margin: 2px 0;
+}
+.wrapper .form .inbox .icon{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    background: rgba(29, 161, 94, 0.6);
+}
+.wrapper .form .inbox .msg-header, .wrapper .form .bot-inbox .rating {
+    max-width: 53%;
+    margin-left: 10px;
+}
+.form .bot-inbox .msg-header p{
+    color: #fff;
+    background: rgba(29, 161, 94, 0.6);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+    /*word-break: break-all;*/
+    margin: 2px 0;
+}
+.wrapper .form .bot-inbox .rating { margin-left: 50px}
+.wrapper .form .bot-inbox .rating p button{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  width: auto !important;
+  padding: 0 !important;
+  padding-left: 5px !important;
+}
+/* Rating hovering effect */
+.wrapper .form .bot-inbox .rating p button, 
+.wrapper .form .bot-inbox .rating p button:hover, .wrapper .form .bot-inbox .rating p button:hover ~ button{
+  color: #fff;
+  transition: color 200ms;
+  transition-delay: 0;
+}
+.wrapper .form .bot-inbox .rating p:hover button {
+  color: #fc0;
+}
+
+/* Miscellaneous styles. */
+.wrapper .form .inbox .rating p button i {
+  cursor: pointer;
+  font-style: normal;
+}
+
+.form .user-inbox .msg-header p{
+    color: #333;
+    background: #efefef;
+    padding: 8px 10px;;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 1px 0;
+}
+.wrapper .typing-field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #efefef;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px;
+    /*display: none;*/
+}
+.wrapper .typing-field .input-data{
+    height: 40px;
+    position: relative;
+    margin: 0 5px;
+    width: 100%;
+}
+.wrapper .typing-field .input-data input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 80px 0 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: #fff;
+    transition: all 0.3s ease;
+    margin: 0 !important;
+    z-index: 1;
+}
+.typing-field .input-data input:focus{
+    border-color: rgba(29, 161, 94, 0.8); 
+}
+.input-data input::placeholder{
+    color: #999999;
+    transition: all 0.3s ease;
+}
+.input-data input:focus::placeholder{
+    color: #bfbfbf;
+}
+.wrapper .typing-field .input-data button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    height: 30px;
+    width: 65px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    background: #1da15e;
+    border: 1px solid #1da15e;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    padding: 0 !important;
+}
+.wrapper .typing-field .input-data input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
+.typing-field .input-data button:hover{
+    background: #1da15e;
+}
+
+/* Strating Chat Screen */
+  .wrapper .chat-box{
+    padding: 20px;
+    margin-top: 35%;
+    width: 100%;
+  }
+  .chat-box .desc-text{
+    color: #515365;
+    text-align: center;
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  .chat-box form{
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 25px;
+  }
+  .chat-box form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .chat-box form .field:last-child{
+    margin-bottom: 15px;
+  }
+  form .field input,
+  form .field button,
+  form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px 5px 20px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+  }
+  form .field input:focus,
+  form .textarea textarea:focus{
+    border-color: #1da15e
+  }
+  form .field input::placeholder,
+  form .textarea textarea::placeholder{
+    color: silver;
+    transition: all 0.3s ease;
+  }
+  form .field input:focus::placeholder,
+  form .textarea textarea:focus::placeholder{
+    color: lightgrey;
+  }
+  .chat-box form .textarea{
+    height: 70px;
+    width: 100%;
+  }
+  .chat-box form .textarea textarea{
+    height: 100%;
+    border-radius: 50px;
+    resize: none;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .chat-box form .field button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background: #1da15e;
+    transition: all 0.3s ease;
+  }
+  .chat-box form .field button:active{
+    transform: scale(0.97);
+  }
+
+/* Icon to hide chat */
+#click{
+    display: none;
+  }
+  .chatbot label{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    height: 45px;
+    width: 45px;
+    background: #1da15e;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .chatbot label i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+  }
+  .chatbot label i.fas{
+    opacity: 0;
+    pointer-events: none;
+  }
+  #click:checked ~ label i.fas{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  #click:checked ~ label i.fab{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+ /* #click:checked ~ .wrapper{
+    opacity: 1;
+    bottom: 85px;
+    pointer-events: auto;
+  } */
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 7.5px;
+}

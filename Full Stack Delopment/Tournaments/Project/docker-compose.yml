@@ -1,0 +1,29 @@
+version: '3'
+services:
+  app:
+    image: backendcontainer
+    ports:
+     - 8080:8080
+    build:
+      context: .
+    container_name: app
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/Individualsem3
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=IndividualSEM3
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+  web:
+    image: frontendcontainer
+    ports:
+     - 3000:3000
+  db:
+    image: mysql
+    ports:
+     - "3306:3306"
+    environment:
+     - MYSQL_ROOT_PASSWORD=IndividualSEM3
+     - MYSQL_USER=root
+     - MYSQL_PASSWORD=IndividualSEM3
+     - MYSQL_DATABASE=Individualsem3

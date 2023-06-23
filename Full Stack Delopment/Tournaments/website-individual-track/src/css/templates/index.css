@@ -1,0 +1,57 @@
+h1, h2, h3, h4, p {
+    /*display: inline-block;*/
+    color: #11101d;
+    font-weight: 500;
+    margin-bottom: 18px
+}
+body{background-color: #e4e9f7;}
+.container {margin-top: 75px;}
+.content {   
+  background: #f1f5ff;
+  padding: 25px;
+  border-radius: 15px;
+}
+.forms {margin-top: 25px;}
+input, textarea, select {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #11101d;
+    font-size: 16px;
+    color: #11101d;
+    background: transparent;
+    border-radius: 30px;
+    /*margin: 10px;*/
+  }
+  select, textarea {border-radius: 5px; margin: 0; margin-top: 10px;}
+  
+  input[type=text], input[type=password], input[type=email], input[type="number"], input[type="file"], input[type="tel"] {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    background: #11101d;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  input[type="submit"]:hover {
+    opacity: 0.8;
+  }
+.form-control {
+  margin:0 !important;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  height: 100%;
+}
+.input-group .input-group-text {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}

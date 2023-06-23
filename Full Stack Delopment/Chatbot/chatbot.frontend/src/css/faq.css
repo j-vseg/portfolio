@@ -1,0 +1,19 @@
+.faq {text-align: left; margin-top: 50px;}
+.faq .category {
+    margin-bottom: 65px;
+}
+.faq .category h2 {margin-bottom: 30px;}
+.faq .card-header a {
+    text-decoration: none;
+    color: black;
+}
+.faq .card-header .question-text {
+    display: inline-block;
+    width: 95%;
+}
+.faq .card-header i {
+    float: right;
+    margin-top: 7px;
+}
+.faq .question {margin-bottom: 15px;}
+.faq .question .answer {margin-bottom: 25px;}

@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "codescanner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twostraws/CodeScanner",
+      "state" : {
+        "revision" : "d8f10d992ef32a4187b78a6df320facf75d631d8",
+        "version" : "2.3.1"
+      }
+    },
+    {
+      "identity" : "popupview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Mijick/PopupView.git",
+      "state" : {
+        "revision" : "285d4d026fdd24728b8122be443e91bbe0f33d15",
+        "version" : "1.2.2"
+      }
+    }
+  ],
+  "version" : 2
+}

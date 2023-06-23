@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="map">Kaart</string>
+    <string name="list">Lijst</string>
+    <string name="info">Info</string>
+    <string name="settings">Instellingen</string>
+    <string name="language">Taal</string>
+    <string name="detailed">Details</string>
+    <string name="cities">Steden</string>
+    <string name="streets">Straten</string>
+    <string name="people">Personen</string>
+    <string name="btn_en_desc">Dit is de vlag van Groot-Brittannië. Deze kan gebruikt worden om de taal naar Engels te veranderen.</string>
+    <string name="btn_nl_desc">Dit is de vlag van Nederland. Deze kan gebruikt worden om de taal naar Nederlands te veranderen.</string>
+    <string name="btn_fr_desc">Dit is de vlag van Frankrijk. Deze kan gebruikt worden om de taal naar Frans te veranderen.</string>
+    <string name="popup_title_lang">Huidige taal</string>
+    <string name="popup_text_lang">Deze taal is al geselecteerd</string>
+    <string name="hello_blank_fragment">Dit is een leeg fragment</string>
+</resources>

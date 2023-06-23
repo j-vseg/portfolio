@@ -1,0 +1,10 @@
+footer { 
+    background-color: #1da15e;
+    color: white;
+ }
+footer i { color: white; }
+footer p {font-size: 17px;}
+footer .information p {color: white !important;}
+footer .information p span { font-weight: 600;}
+footer .information .menu {margin-top: 40px;}
+footer .sign-up:hover {text-decoration: underline;}

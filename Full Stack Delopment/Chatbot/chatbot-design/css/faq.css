@@ -1,0 +1,10 @@
+.faq {text-align: left; margin-top: 50px; }
+.faq .category h2 {margin-bottom: 30px;}
+.faq .card-header a {
+    text-decoration: none;
+    color: black;
+}
+.faq .card-header i {
+    float: right;
+}
+.faq .question .answer {margin-bottom: 25px;}
