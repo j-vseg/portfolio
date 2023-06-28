@@ -3,7 +3,7 @@
 
 
 ## Description
-This portfolio contains some project I have done the past years during my study. Further information on the projects and installation can be found in the project itself. 
+This portfolio contains some projects I have done in the past years during my study. Further information on the projects and installation can be found in the project itself. 
 
 ## Installation
 ```

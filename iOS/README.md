@@ -2,10 +2,10 @@
 
 ## Description
 
-VegiScan is a group project given by school. We where tasked to build an application in iOS that helped people be more concious about their consumings. The target audience is brought so we narrowed it down to people who are vegan or veganist. 
+VegiScan is a group project given by the school. We were tasked to build an application in iOS that helped people be more conscious about their consumption. The target audience is brought so we narrowed it down to people who are vegan or veganist. 
 
-We started of by researching the target audience with a survey on what they where search on products to see if they are vegan or not, what they wher missing, if they already used an app from this and lastly if they had any ideas. 
-Based on this reseach we started building our application. 
+We started off by researching the target audience with a survey on what they were searching on products to see if they are vegan or not, what they were missing, if they already used an app from this and lastly, if they had any ideas. 
+Based on this research we started building our application. 
 
 I have learned to work with Xcode and improve my coding skills in Swift.
 

@@ -1,26 +1,60 @@
 .projects { margin-top: 75px; }
 .project-card { 
-    display: inline-block;
+    position: relative;
+    display: block;
     width: 100%;
-    padding: 25px;
-    border-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
-.project-card .title-box { text-align: center; }
-.project-card .text-box { min-height: 280px; }
+.project-card .title-box { 
+    text-align: center; 
+    color: white;
+}
+.project-card .title-box .background { 
+    filter: brightness(45%);
+    position: relative;
+}
+.project-card .title-box .content-box {   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-card .text-box { 
+    min-height: 220px;
+    padding: 25px;
+}
+.project-card .title-box .content-box img { height: 150px; }
+.project-card .text-box .page-link { 
+    position: absolute;
+    border: none;
+    color: #0b369c;
+    background-color: transparent;
+    font-weight: bolder;
+    bottom: 25px;
+    right: 25px;
+}
 
 #weatheristics { background-color: rgba(0, 213, 255, 0.2); }
 #vegiscan { background-color: rgba(158, 232, 192, 0.3); }
 #stolpersteine { background-color: rgba(219, 175, 19, 0.2); }
 
 @media screen and (max-width: 768px) {
-    #stolpersteine img { 
-        width: 150px; 
-        height: auto;
+    .project-card .title-box .content-box img { 
+        width: 125px; 
+        height: 125px;
+    }
+    .project-card .text-box { 
+        min-height: 275px;
     }
 }
 @media screen and (max-width: 576px) {
-    #stolpersteine img { 
-        height: 150px; 
-        width: auto;
+    .project-card .text-box { 
+        min-height: 200px;
     }
 }

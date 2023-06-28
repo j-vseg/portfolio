@@ -2,9 +2,9 @@
 
 ## Description
 
-Stolpersteine is a group project that was requested by [Stichting 18 September](https://stichting18september.nl/). We where asked to update an outdated web application from Stichting 18 September. 
+Stolpersteine is a group project that was requested by [Stichting 18 September](https://stichting18september.nl/). We were asked to update an outdated web application from Stichting 18 September. 
 
-Stolpersteine are memorial stones that are places by Stichting 18 September. Their functionality is the help remember the people who died during the Holocaust. The stones are covered in gold, each stone for one victum. The stones are placed at the place where the person has last lived freely. More information can be found [here](https://en.wikipedia.org/wiki/Stolperstein).
+Stolpersteine are memorial stones that are placed by Stichting 18 September. Their functionality is the help remember the people who died during the Holocaust. The stones are covered in gold, each stone for one victim. The stones are placed at the place where the person has last lived freely. More information can be found [here](https://en.wikipedia.org/wiki/Stolperstein).
 
 I have learned to work with Android Studio and improve my coding skills with Kotlin.
 
@@ -17,7 +17,7 @@ I have learned to work with Android Studio and improve my coding skills with Kot
 
 ## Installation
 
-You can open the application in Android Studio and it should install everyting needed automaticly. 
+You can open the application in Android Studio and it should install everything needed automatically. 
 
 ## Usage
 
@@ -39,9 +39,9 @@ You can open the application in Android Studio and it should install everyting n
 
 ## Features
 
-- Show Stolpersteine on map
+- Show Stolpersteine on a map
 - Display a list of Stolpersteine
 - Be able to search Stolpersteine and group them by People, Street and City
 - Clicking on a marker navigates to a detailed information page
-- Multi language (NL/EN/FR)
+- Multi-language (NL/EN/FR)
 - Be able to switch between languages

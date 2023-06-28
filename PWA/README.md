@@ -2,7 +2,7 @@
 
 ## Description
 
-Weatheristics is an individual project I worked on for 4 weeks. I was asked to build a weather application. The application show the weather and send push notification if it is about to rain.
+Weatheristics is an individual project I worked on for 4 weeks. I was asked to build a weather application. The application shows the weather and sends push-notification if it is about to rain.
 
 I have learned to work with Service Workers and improve my coding skills with HTML, CSS, PHP and JavaScript.
 
@@ -14,7 +14,7 @@ I have learned to work with Service Workers and improve my coding skills with HT
 
 ## Installation
 
-You can open the application in Visual Studio Code and run npm install in the root of the prject to install all the needed packages.
+You can open the application in Visual Studio Code and run npm install in the root of the project to install all the needed packages.
 ```
 npm install
 ```
@@ -28,4 +28,4 @@ Used libraries:
 
 - Be able to get weather information with your location
 - Be able to get weather information from our cities
-- Be able to send push notification when it is about to rain or snow
+- Be able to send push notifications when it is about to rain or snow
