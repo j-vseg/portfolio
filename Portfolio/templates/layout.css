@@ -29,11 +29,12 @@ p, li {
    font-size: 30px !important;
    font-weight: 900 !important;
  }
-.light-blue { color: #00d4ff; }
+.light-blue { color: #39a187; }
 .light-green { color: rgba(158, 232, 192); }
 .dark-yellow { color: rgba(219, 175, 19); }
 .blue { color: #0b369c; }
-.background-dark-blue { background-color: #0e1b28;}
+.ocean-green { color: #69fab9; }
+.background-dark-blue { background-color: #001220;}
 
 button, a[type="button"] {
   font-family: 'Poppins', sans-serif;

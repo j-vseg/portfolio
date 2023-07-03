@@ -2,6 +2,8 @@
 .header { 
   margin-bottom: 50px;
   color: white;
+  height: 100vh;
+  background-color: #001220;
  }
 .header video { height: 500px; }
 .header .content {
@@ -11,6 +13,21 @@
   left: 25%;
   right: 25%;
 }
+.header .typed-cursor { opacity: 0; }
+.header #title_name { min-height: 72px; }
+.header .content a {
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+}
+.header .w-computer, .header .w-tablet, .header .w-phone { 
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.header .w-computer { display: block; }
+.header .w-tablet { display: none; }
+.header .w-phone { display: none; }
 
 @media screen and (max-width: 992px) {
   .header .content {
@@ -18,12 +35,17 @@
     right: 10%;
   }
 }
-
-.header .content a {
-  color: white;
-  padding: 8px;
-  font-size: 18px;
+@media screen and (max-width: 768px) {
+  .header .project { display: none; }
+  .header .w-tablet { display: block; }
+  .header .w-phone { display: none; }
 }
+@media screen and (max-width: 576px) {
+  .header .w-computer { display: none; }
+  .header .w-tablet { display: none; }
+  .header .w-phone { display: block; }
+}
+
 
 /* About me*/
 .about-me .img-box {
@@ -49,7 +71,7 @@
 /* Projects */
 .projects {margin-top: 75px;}
 .project {
-  background-color: #0e1b28;
+  background-color: #001220;
   padding: 25px;
   border-radius: 25px;
   color: white;
@@ -74,150 +96,3 @@
       width: auto;
   }
 }
-/*.header .bg {
-    animation:slide 30s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #b4ffcd 50%, #00d4ff 50%);
-    left:-50%;
-    opacity:.5;
-    right:-50%;
-    z-index:-1;
-    position: fixed;
-    height: 500px;
-}
-.header .bg2 {
-    animation-direction:alternate-reverse;
-    animation-duration:30s;
-}
-.header .bg3 {
-    animation-duration:30s;
-}
-@keyframes slide {
-    0% {
-        transform:translateX(-25%);
-    }
-
-    100% {
-        transform:translateX(25%);
-    }
-}*/
-
- /* Header About me
- .headerAboutMe {
-   z-index: 5;
-   padding-top: 75px;
-   padding-left: 60px;
-   padding-right: 60px;
-   padding-bottom: 0;
-   background-color: #7BD1AE;
-   font-size: 30px;
- }
-
- .headerAboutMe img {
-   margin-left: 100px;
- }
-
- /* speech bubble 14
- .box3 {
-   border-radius: 15px;
-   background: #128266;
-   color: #fff;
-   padding: 15px;
-   text-align: center;
-   font-family: 'Poppins', sans-serif;
-   position: relative;
-   width: 150px;
-   float: right;
-   font-size: 17.5px;
-   left: -925px;
-   top: 160px;
- }
-
- .sb14:before {
-   content: "";
-   width: 0px;
-   height: 0px;
-   position: absolute;
-   border-left: 15px solid transparent;
-   border-right: 15px solid #128266;
-   border-top: 15px solid #128266;
-   border-bottom: 15px solid transparent;
-   left: -16px;
-   top: 0px;
- }
-
- /* Home Page Main Content
- .main {
-   padding: 50px;
-   z-index: 0;
- }
-
- .main span {
-   background-color: none;
- }
-
- #AboutMe {
-   margin-bottom: 100px;
-   margin-top: 20px;
-   background-color: #A1DEC6;
-   /*display: inline-block;
-   border-radius: 15px;
-   padding-bottom: 20px;
- }
-
- #divMain{
-   padding-top: 20px;
-   padding-left: 20px;
- }
-
- .linkFurther {
-   color: #127F62 !important;
- }
-
- .title_description {
-   font-weight: bold;
-   font-size: 20px;
- }
-
- .description {
-   font-size: 15px;
- }
-
- /* About Me Page
- .imgBackgroundInformation {
-   float: right !important;
- }
-
- .imgHobbies {
-   float: left !important;
-   padding-right: 15px;
- }
-
- /* Foto Gallery About Me
- .row {
-   margin-top: 50px;
-   margin-bottom: 50px;
-   display: flex;
-   flex-wrap: wrap;
-   padding: 0 4px;
- }
-
- .column {
-   padding: 5px;
-   flex: 50%;
- }
-
- .column img {
-   margin-top: 8px;
-   vertical-align: middle;
- }
-
- /* My Projects page
- .MyProjectsVS {
-   float:left;
-   padding-right:20px
- }
-
- .imgTW {
-   padding-left: 20px;
-   float: right;
- }*/
