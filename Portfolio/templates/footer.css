@@ -1,7 +1,7 @@
 /* Footer */
 footer {
     overflow: hidden;
-    background-color: #001220;
+    background-image: url(../img/backgrounds/blob-footer.svg);
     width: 100%;
     z-index: 999;
     bottom: 0 !important;

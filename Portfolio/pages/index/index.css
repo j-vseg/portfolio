@@ -1,9 +1,13 @@
+body {
+  background-image: url(../../img/backgrounds/blobs.svg);
+  background-repeat: none;
+}
 /* Header */
 .header { 
   /*margin-bottom: 50px;*/
   color: white;
   height: 100vh;
-  background-color: #001220;
+  /*background-color: #001220;*/
  }
 .header video { height: 500px; }
 .header .content {

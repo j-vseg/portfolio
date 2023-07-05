@@ -1,3 +1,7 @@
+body {
+    background-image: url(../../img/backgrounds/blobs-project.svg);
+    background-repeat: no-repeat;
+}
 .projects { 
     margin-top: 100px; 
     margin-bottom: 100px;

@@ -1,3 +1,7 @@
+body {
+  background-image: url(../../img/backgrounds/blobs.svg);
+  background-repeat: none;
+}
 .information, .experience { margin-top: 100px !important; }
 .information .about-me { margin-bottom: 100px; }
 .cards {   
@@ -84,4 +88,37 @@
 
 @media screen and (max-width: 768px) {
   .skills { margin-top: 75px;}
+}
+
+/* Projects */
+.projects svg {
+  position: relative;
+}
+.project {
+  background-color: #001220;
+  padding: 25px;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  border: solid 1px #69fab9;
+  margin-bottom: 50px;
+}
+.projects a, .projects a:hover {
+  color: white;
+  text-decoration: none;
+}
+.project img { 
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 992px) {
+  .project img { 
+      width: 150px; 
+      height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .project img { 
+      height: 150px; 
+      width: auto;
+  }
 }
