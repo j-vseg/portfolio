@@ -1,10 +1,13 @@
 .information, .experience { margin-top: 100px !important; }
 .information .about-me { margin-bottom: 100px; }
+.cards {   
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
 .flip-card-container {
-  margin-top: 75px;
-    width: 250px;
-    height: 250px;
-    perspective: 1000px;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
 }
   .flip-card {
     position: relative;
@@ -27,7 +30,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #0e1b28;
+    background-color: #001220;
+    border: solid 2px #69fab9;
     color: white;
     /* border-radius: 0.5rem; */
   }
@@ -65,6 +69,7 @@
 .skill { 
   display: inline-block;
   width: 100%;
+  color: white;
 }
 .skill small { 
   font-weight: bold;
@@ -75,7 +80,7 @@
 .skill .skill-procentage { 
   float: right;
 }
-.skill .progress-bar { background-color: #00d4ff;}
+.skill .progress-bar { background-color: #69fab9;}
 
 @media screen and (max-width: 768px) {
   .skills { margin-top: 75px;}

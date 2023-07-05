@@ -37,7 +37,7 @@
 .content-box .page-link { 
     border: none;
     float: right;
-    color: #0b369c;
+    color: #69fab9;
     background-color: transparent;
     font-weight: bolder;
 }
@@ -46,6 +46,10 @@
 .content li::marker { color: #00d4ff; }
 .content .vegi-list li::marker { color: rgba(158, 232, 192); }
 .content .steine-list li::marker { color: rgba(219, 175, 19); }
+
+.designs {
+    margin-bottom: 100px;
+}
 
 @media screen and (max-width: 768px) {
     .header { 

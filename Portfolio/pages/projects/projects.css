@@ -1,4 +1,7 @@
-.projects { margin-top: 75px; }
+.projects { 
+    margin-top: 100px; 
+    margin-bottom: 100px;
+}
 .project-card { 
     position: relative;
     display: block;
@@ -40,9 +43,9 @@
     right: 25px;
 }
 
-#weatheristics { background-color: rgba(0, 213, 255, 0.2); }
-#vegiscan { background-color: rgba(158, 232, 192, 0.3); }
-#stolpersteine { background-color: rgba(219, 175, 19, 0.2); }
+#weatheristics { background-color: rgba(0, 213, 255, 0.7); }
+#vegiscan { background-color: rgba(158, 232, 192, 0.7); }
+#stolpersteine { background-color: rgba(219, 175, 19, 0.9); }
 
 @media screen and (max-width: 768px) {
     .project-card .title-box .content-box img { 

@@ -14,14 +14,16 @@
   padding: 0 !important;
 }
 .navbar-scrolled { background-color: #001220; }
-.navbar-toggler button { 
+.navbar-toggler-icon i, .navbar-toggler-icon i:focus { 
   color: white;
   border: none;
 }
 .navbar ul {
   list-style: none;
 }
-
+.navbar .active a {
+  color: #69fab9;
+}
 
 .navbar a {
   float: left;
@@ -36,7 +38,7 @@
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: white;
 }
 

@@ -1,6 +1,6 @@
 /* Header */
 .header { 
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   color: white;
   height: 100vh;
   background-color: #001220;
@@ -46,9 +46,16 @@
   .header .w-phone { display: block; }
 }
 
-
 /* About me*/
+.about-me {
+  color: white;
+}
 .about-me .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .text-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,14 +75,36 @@
   }
 }
 
+/* Skills */
+.skills { 
+  margin-top: 100px !important; 
+  margin-bottom: 100px !important; 
+}
+.skills .skill-list p span {
+  font-weight: 900;
+  color: #69fab9;
+  min-width: 25px !important;
+}
+.skills a {
+  color: #001220;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  .skills .skill-list { margin-top: 50px;}
+}
+
 /* Projects */
-.projects {margin-top: 75px;}
+.projects svg {
+  position: relative;
+}
 .project {
   background-color: #001220;
   padding: 25px;
   border-radius: 25px;
   color: white;
   text-align: center;
+  border: solid 1px #69fab9;
+  margin-bottom: 50px;
 }
 .projects a, .projects a:hover {
   color: white;

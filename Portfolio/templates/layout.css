@@ -2,26 +2,31 @@
 
 body {
   margin: 0;
+  background-color: #001220 !important; 
 }
 h1 {
   font-family: 'Poppins', sans-serif !important;
   font-size: 25px !important;
   font-weight: bold !important;
+  color: white;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 22px !important;
-  font-weight: bold !important;
+  font-weight: bold !important;   
+  color: white;
 }
 h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px !important;
   font-weight: bold !important;
+  color: white;
 }
 p, li {
    font-family: 'Poppins', sans-serif;
    font-size: 18px;
+   color: white;
  }
 
  .title {
@@ -29,14 +34,14 @@ p, li {
    font-size: 30px !important;
    font-weight: 900 !important;
  }
-.light-blue { color: #39a187; }
+.light-blue { color: #00d4ff; }
 .light-green { color: rgba(158, 232, 192); }
 .dark-yellow { color: rgba(219, 175, 19); }
 .blue { color: #0b369c; }
 .ocean-green { color: #69fab9; }
-.background-dark-blue { background-color: #001220;}
+.background-secondary { background-color: #071a29;}
 
-button, a[type="button"] {
+/*button, a[type="button"] {
   font-family: 'Poppins', sans-serif;
   margin-top: 25px;
   border-radius: 25px;
@@ -49,4 +54,31 @@ button, a[type="button"] {
 a[type="button"]:hover {
   color: white;
   text-decoration: none;
+}*/
+button, a[type="button"] {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 25px;
+  background: #69fab9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #071a29;
+  text-decoration: none;
+  font-weight: 900;
+}
+a[type="button"]:hover {
+  color: #071a29;
+}
+
+/* Scroll animation */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
