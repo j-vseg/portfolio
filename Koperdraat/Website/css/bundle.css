@@ -1,0 +1,79 @@
+.bundle {
+    background-color: #f2f2f2;
+    border: 0.5px solid lightgray;
+    padding: 0;
+    margin-top: 25px;
+    border-right: none;
+    border-bottom: none;
+}
+.materials h2, .packages h2 {text-decoration: underline #f9e43491;}
+.bundle img {
+    margin-bottom: 10px;
+}
+.bundle .information {
+    padding: 10px;
+}
+.bundle .information p {font-weight: 500;}
+.about-bundle {
+    border: 0.5px solid lightgray;
+    border-left: none;
+    border-bottom: none;
+    margin-top: 25px;
+    padding: 25px 25px 15px 35px;
+}
+.materials {
+    border: 0.5px solid lightgray;
+    border-right: none;
+    border-top: none;
+    padding: 25px 25px 15px 35px;
+}
+.packages {
+    border: 0.5px solid lightgray;
+    border-left: none;
+    border-top: none;
+    padding: 25px 25px 15px 35px;
+    background-color: #f2f2f2;
+}
+.packages ul {
+    list-style: none;
+    padding: 0;
+}
+.packages ul li {
+    padding: 5px;
+    border-top: 1px solid #004a7c;
+}
+.packages ul li span {
+    float: right;
+    font-weight: 500;
+}
+a {text-decoration: none;}
+.packages ul li:hover {
+    background-color: rgb(0, 74, 124, 0.4);
+}
+.packages ul .last-item {
+    border-bottom: 1px solid #004a7c;
+}
+
+@media screen and (max-width: 768px) {
+    .bundle {
+        border: 0.5px solid lightgray;
+        border-bottom: none;
+    }
+    .about-bundle {
+        border: 0.5px solid lightgray;
+        border-bottom: none;
+        border-top: none;
+        margin-top: 0;
+    }
+    .materials {
+        border: 0.5px solid lightgray;
+        border-bottom: none;
+        border-top: none;
+        background-color: #f2f2f2;
+    }
+    .packages {
+        border: 0.5px solid lightgray;
+        border-top: none;
+        background-color: white;
+    }
+}

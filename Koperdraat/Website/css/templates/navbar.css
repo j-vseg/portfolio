@@ -1,0 +1,55 @@
+.navbar {
+  background-image: url('../../img/none-header.jpg');
+  margin-bottom: 75px;
+}
+.navbar-scroll button {
+  text-align: start;
+}
+.navbar-scroll button:hover {
+  border: none;
+  color: transparent;
+}
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon i {
+  color: #fff;
+}
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+.disabled {color: rgba(255, 255, 255, 0.7)!important;}
+
+/*.navbar-nohome {
+    background-image: url('../../img/none-header.jpg');
+}*/
+.navbar form {
+  margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .navbar-toggler-icon:hover {
+    border: none;
+  }
+  .navbar-collapse {
+    padding: 0 15px 0 15px;
+  }
+  .navbar form {
+    float: none;
+    margin-bottom: 10px !important;  
+    margin-top: 5px !important;
+  }
+  .form-control {
+    width: 50%;
+  }
+}

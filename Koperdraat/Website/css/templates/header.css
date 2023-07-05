@@ -1,0 +1,14 @@
+header .bg-image {
+    background-image: url('../../img/header.jpg');
+    height: 100vh;
+}
+@media screen and (max-width: 576px) {
+    header .bg-image {
+        height: 75vh;
+    }
+}
+@media screen and (max-width: 350px) {
+    header .bg-image {
+        height: 50vh;
+    }
+}
