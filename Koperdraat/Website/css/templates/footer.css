@@ -1,5 +1,5 @@
 footer {margin-top: 75px;}
-footer, footer p {
+footer, footer p, footer p a, footer p a:hover {
     background-color: #004a7c;
     color: white;
 }

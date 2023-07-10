@@ -11,14 +11,6 @@ window.addEventListener('scroll', () => {
   else if (window.scrollY < 650) { navbar.classList.remove('navbar-scrolled'); }
 })
 
-var docTitle = document.title;
-window.addEventListener("blur", () => {
-  document.title = "Come back :c"
-})
-window.addEventListener("focus", () => {
-  document.title = docTitle
-})
-
 const tween = KUTE.fromTo(
   '#layer1',
   { path: '#layer1' },

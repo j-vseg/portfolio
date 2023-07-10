@@ -1,3 +1,10 @@
+/* Over mij */
+.over-mij {
+  display: flex;
+  align-items: center;
+}
+
+/* Carousel */
 .carousel {background-color: #f9e43491;}
 .carousel-control-next-icon, .carousel-control-prev-icon {
     color: white;

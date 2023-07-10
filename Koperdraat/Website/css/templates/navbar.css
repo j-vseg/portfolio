@@ -2,6 +2,11 @@
   background-image: url('../../img/none-header.jpg');
   margin-bottom: 75px;
 }
+.navbar .navbar-brand img {
+  width: 75px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
 .navbar-scroll button {
   text-align: start;
 }
@@ -44,12 +49,7 @@
   .navbar-collapse {
     padding: 0 15px 0 15px;
   }
-  .navbar form {
-    float: none;
-    margin-bottom: 10px !important;  
-    margin-top: 5px !important;
-  }
-  .form-control {
-    width: 50%;
+  .navbar .navbar-brand  {
+    display: none;
   }
 }
