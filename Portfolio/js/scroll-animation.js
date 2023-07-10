@@ -15,3 +15,11 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+var docTitle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Come back :c"
+})
+window.addEventListener("focus", () => {
+  document.title = docTitle
+})
