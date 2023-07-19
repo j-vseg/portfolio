@@ -39,15 +39,15 @@ body {
     color: white;
     /* border-radius: 0.5rem; */
   }
-  .flip-card-front .content, .flip-card-back.content {
+  .flip-card-front .content, .flip-card-back .content {
     display: block;
   }
   .flip-card-front .content p , .flip-card-back.content p {
     font-size: 12px !important;
   }
-  .flip-card-front .content i {
+  .flip-card-front .content img {
     margin-bottom: 10px;
-    font-size: 50px;
+    width: 75px;
   }
   .flip-card-back {
     padding: 10px;
@@ -63,6 +63,7 @@ body {
     text-align: center;
     margin: 1rem;
     line-height: 1.5rem;
+    font-size: 15px;
   }
   .flip-card-back p span {
     display: block;
