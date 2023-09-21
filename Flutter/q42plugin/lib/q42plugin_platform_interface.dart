@@ -26,4 +26,8 @@ abstract class Q42pluginPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<String?> getQ42Stats() {
+    throw UnimplementedError('getQ42Stats() has not been implemented.');
+  }
 }

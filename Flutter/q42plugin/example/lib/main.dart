@@ -6,6 +6,7 @@ import 'package:q42plugin/q42plugin.dart';
 
 void main() {
   runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
 }
 
 class MyApp extends StatefulWidget {

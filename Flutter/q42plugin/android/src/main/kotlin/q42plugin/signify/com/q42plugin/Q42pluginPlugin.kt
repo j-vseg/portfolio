@@ -22,6 +22,13 @@ class Q42pluginPlugin: FlutterPlugin, MethodCallHandler {
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
+    if (call.method == "getQ42Stats") {
+      result.success("Android - Getting Q42 Stats")
+      //AccessibilityCollector.collect();
+    } else {
+      result.notImplemented()
+    }
+
     if (call.method == "getPlatformVersion") {
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
     } else {
