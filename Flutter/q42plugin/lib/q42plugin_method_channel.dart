@@ -14,4 +14,10 @@ class MethodChannelQ42plugin extends Q42pluginPlatform {
     final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
+
+  @override
+  Future<String?> getQ42Stats() async {
+    final version = await methodChannel.invokeMethod<String>('getQ42Stats');
+    return version;
+  }
 }

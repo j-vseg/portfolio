@@ -12,6 +12,8 @@ public class Q42pluginPlugin: NSObject, FlutterPlugin {
     switch call.method {
     case "getPlatformVersion":
       result("iOS " + UIDevice.current.systemVersion)
+    case "getQ42Stats":
+      result("iOS - Getting Q42 Stats")
     default:
       result(FlutterMethodNotImplemented)
     }
