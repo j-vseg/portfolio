@@ -17,34 +17,27 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  String _q42Stats = 'Unknown';
   final _q42pluginPlugin = Q42plugin();
 
   @override
   void initState() {
     super.initState();
-    initPlatformState();
+    initQ42StatsState();
   }
 
-  // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
-    String platformVersion;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    // We also handle the message potentially returning null.
+  Future<void> initQ42StatsState() async {
+    String q42Stats;
     try {
-      platformVersion =
-          await _q42pluginPlugin.getPlatformVersion() ?? 'Unknown platform version';
+      q42Stats =
+          await _q42pluginPlugin.getQ42Stats() ?? 'Unknown q42 stats';
     } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
+      q42Stats = 'Failed to get Q42 Stats';
     }
-
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
+      _q42Stats = q42Stats;
     });
   }
 
@@ -56,7 +49,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Text('Running on: $_q42Stats\n'),
         ),
       ),
     );

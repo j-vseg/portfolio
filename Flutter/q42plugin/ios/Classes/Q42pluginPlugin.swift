@@ -1,5 +1,6 @@
 import Flutter
 import UIKit
+//import Q42Stats
 
 public class Q42pluginPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
@@ -14,7 +15,7 @@ public class Q42pluginPlugin: NSObject, FlutterPlugin {
       result("iOS " + UIDevice.current.systemVersion)
     case "getQ42Stats":
       result("iOS - Getting Q42 Stats")
-      //Q42Stats.
+      //Q42Stats.collect()
     default:
       result(FlutterMethodNotImplemented)
     }
