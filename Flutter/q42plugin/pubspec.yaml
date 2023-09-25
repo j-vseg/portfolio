@@ -35,16 +35,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: q42plugin.signify.com.q42plugin
+        package: q42stats.signify.com.q42plugin
         pluginClass: Q42pluginPlugin
       ios:
         pluginClass: Q42pluginPlugin
-      linux:
-        pluginClass: Q42pluginPlugin
-      macos:
-        pluginClass: Q42pluginPlugin
-      windows:
-        pluginClass: Q42pluginPluginCApi
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
