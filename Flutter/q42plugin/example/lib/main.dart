@@ -29,6 +29,7 @@ class _MyAppState extends State<MyApp> {
   Future<void> initQ42StatsState() async {
     String q42Stats;
     try {
+      print(context);
       q42Stats =
           await _q42pluginPlugin.getQ42Stats() ?? 'Unknown Q42 Stats';
     } on PlatformException {
@@ -46,10 +47,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Q42 Stats example app'),
         ),
         body: Center(
-          child: Text('Running on: $_q42Stats\n'),
+          child: Text('$_q42Stats\n'),
         ),
       ),
     );

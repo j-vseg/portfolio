@@ -1,7 +1,8 @@
 package q42stats.signify.com.q42plugin
 
-import androidx.annotation.NonNull
-
+import android.content.Context
+import android.os.Build
+import android.util.Log
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
@@ -15,19 +16,29 @@ class Q42pluginPlugin: FlutterPlugin, MethodCallHandler {
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
   /// when the Flutter Engine is detached from the Activity
   private lateinit var channel : MethodChannel
+  private var context: Context? = null
 
   override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
+    context = flutterPluginBinding.applicationContext
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "q42plugin")
     channel.setMethodCallHandler(this)
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
     if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+      result.success("Android ${Build.VERSION.RELEASE}")
     }
-    if (call.method == "getQ42Stats") {
-      result.success("Android - Get Q42 Stats")
-    } else {
+    else if (call.method == "getQ42Stats") {
+      //val test = call.hasArgument("context")
+      //val list: List<Map<String, String>>? = call.arguments()
+      //Log.i("MyTag", "value 1 = " + list!![0]["key1"]) // prints Apple
+
+      //val context = call.argument<Context>("context")
+      Log.d("Q42Collect", AccessibilityCollector.collect(context!!).toString())
+      result.success(AccessibilityCollector.collect(context!!).toString())
+      //result.success("Get Q42 Stats")
+    }
+    else {
       result.notImplemented()
     }
   }
