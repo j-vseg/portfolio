@@ -13,7 +13,11 @@ public class Q42pluginPlugin: NSObject, FlutterPlugin {
     case "getPlatformVersion":
       result("iOS " + UIDevice.current.systemVersion)
     case "getQ42Stats":
-      result("iOS - Getting Q42 Stats")
+      var collected : [String:String]? = Q42Stats(options: .all).collect(window: UIWindow())
+      let resultString = collected?.description ?? "nil"
+      print(resultString)
+      result(resultString)
+      //result("iOS - Getting Q42 Stats")
     default:
       result(FlutterMethodNotImplemented)
     }
