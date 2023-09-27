@@ -8,6 +8,9 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
+import q42stats.signify.com.q42plugin.collectors.AccessibilityCollector
+import q42stats.signify.com.q42plugin.collectors.PreferencesCollector
+import q42stats.signify.com.q42plugin.collectors.SystemCollector
 
 /** Q42pluginPlugin */
 class Q42pluginPlugin: FlutterPlugin, MethodCallHandler {
@@ -34,8 +37,13 @@ class Q42pluginPlugin: FlutterPlugin, MethodCallHandler {
       //Log.i("MyTag", "value 1 = " + list!![0]["key1"]) // prints Apple
 
       //val context = call.argument<Context>("context")
-      Log.d("Q42Collect", AccessibilityCollector.collect(context!!).toString())
-      result.success(AccessibilityCollector.collect(context!!).toString())
+      Log.d("AccessibilityCollector", AccessibilityCollector.collect(context!!).toString())
+      Log.d("SystemCollector", SystemCollector.collect(context!!).toString())
+      Log.d("PreferencesCollector: ", PreferencesCollector.collect(context!!).toString())
+      result.success(
+        "AccessibilityCollector: " + AccessibilityCollector.collect(context!!).toString() + " | " +
+              "SystemCollector: " + SystemCollector.collect(context!!).toString() + " | " +
+              "PreferencesCollector: " + PreferencesCollector.collect(context!!).toString())
       //result.success("Get Q42 Stats")
     }
     else {

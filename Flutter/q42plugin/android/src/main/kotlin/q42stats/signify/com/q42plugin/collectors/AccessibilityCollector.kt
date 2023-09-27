@@ -1,4 +1,4 @@
-package q42stats.signify.com.q42plugin
+package q42stats.signify.com.q42plugin.collectors
 
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Context
