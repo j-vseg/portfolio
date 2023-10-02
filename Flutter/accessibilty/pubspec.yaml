@@ -1,7 +1,7 @@
-name: Accessibilty Plugin
+name: accessibilty_plugin
 description: This Flutter plugin is able to gather Accessibility data from iOS and Android. It gathers data from the ScreenReader, VoiceOver, font size and many more.
 version: 0.0.1
-homepage:
+homepage: https://gitlab.com/katjaaa_1/portfolio/-/tree/main/Flutter?ref_type=heads
 
 environment:
   sdk: '>=3.1.2 <4.0.0'
