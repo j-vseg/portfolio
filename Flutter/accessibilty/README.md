@@ -23,7 +23,7 @@ Android:
     "isAnimationsDisabled": "false", 
     "enabledAccessibilityServices": "[]", 
     "screenOrientation": "portrait", 
-    "applicationId": "com.philips.lighting.hue2.daily", 
+    "applicationId": "ExampleApp", 
     "defaultLanguage": "en-US", 
     "sdkVersion": "33", 
     "manufacturer": "Google", 
@@ -36,13 +36,15 @@ Android:
 iOS:
 ```
 {
-    "Accessibility_isSpeakScreenEnabled": "false", "Accessibility_isSpeakSelectionEnabled": "false",
+    "Accessibility_isSpeakScreenEnabled": "false", 
+    "Accessibility_isSpeakSelectionEnabled": "false",
     "Watch_supported": "true",
-    "Accessibility_uses_any_accessibility_setting":
+    "Accessibility_uses_any_accessibility_setting": "false",
     "System_model_name": "Simulator",
     "Screen_in_split_screen": "false",
     "Accessibility_isBoldTextEnabled": "false", 
-    "Stats_version": "iOS 2022-04-15", "Screen_device_idiom": "phone",
+    "Stats_version": "iOS 2022-04-15", 
+    "Screen_device_idiom": "phone",
     "Accessibility_isGrayscaleEnabled": "false",
     "Screen_zoomed": "false",
     "Preference_preferred_content_size": "large",
