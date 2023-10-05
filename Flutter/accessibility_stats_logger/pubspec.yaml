@@ -1,0 +1,28 @@
+name: accessibility_stats_logger
+description: This Flutter plugin is able to gather Accessibility data from iOS and Android. It gathers data from the ScreenReader, VoiceOver, font size and many more.
+version: 1.0.0
+homepage:
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: accessibilityStatsLogger.com.accessibility_stats_logger
+        pluginClass: AccessibilityStatsLoggerPlugin
+      ios:
+        pluginClass: AccessibilityStatsLoggerPlugin
+
