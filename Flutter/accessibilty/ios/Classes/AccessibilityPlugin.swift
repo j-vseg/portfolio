@@ -14,10 +14,11 @@ public class AccessibiltyPlugin: NSObject, FlutterPlugin {
       result("iOS " + UIDevice.current.systemVersion)
     case "getAccessibilityStats":
       var collected: [String: String]? = AccessibilityStats(options: .all).collect(window: UIWindow())
-      let resultString = collected?.description ?? "nil"
-      print(resultString)
-      result(resultString)
-      // result("iOS - Getting Q42 Stats")
+      var accessibilityData = collected?.description ?? "[]"
+      accessibilityData = accessibilityData.replacingOccurrences(of: "[", with: "{")
+      accessibilityData = accessibilityData.replacingOccurrences(of: "]", with: "}")
+
+      result(accessibilityData)
     default:
       result(FlutterMethodNotImplemented)
     }

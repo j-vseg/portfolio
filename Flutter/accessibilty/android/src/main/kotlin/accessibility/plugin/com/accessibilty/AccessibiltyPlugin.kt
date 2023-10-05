@@ -48,7 +48,14 @@ class AccessibiltyPlugin: FlutterPlugin, MethodCallHandler {
       Log.d("AccessibilityCollector", AccessibilityCollector.collect(context!!).toString())
       Log.d("SystemCollector", SystemCollector.collect(context!!).toString())
       Log.d("PreferencesCollector: ", PreferencesCollector.collect(context!!).toString())
-      result.success(collection.toString())
+
+      var accessibilityData = collection.toString()
+      accessibilityData = accessibilityData.replace("=", "': '");
+      accessibilityData = accessibilityData.replace(", ", "', '");
+      accessibilityData = accessibilityData.replace("{", "{'");
+      accessibilityData = accessibilityData.replace("}", "'}");
+
+      result.success(accessibilityData)
     }
     else {
       result.notImplemented()
