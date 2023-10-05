@@ -4,4 +4,7 @@ This Flutter plugin is able to gather Accessibility data from iOS and Android. I
 
 ## 0.0.2
 
-Updates have been made that the String returned by 'getAccessibilityStats' returns in the same format for Android and iOS. Now you can easily cast to Map<String, String>.
+Updates have been made that the String returned by ```getAccessibilityStats()``` returns in the same format for Android and iOS. Now you can easily cast to ```Map<String, String>```.
+
+## 0.0.3
+Updated the docuemntation by including the responses from Android and iOS in the README.
