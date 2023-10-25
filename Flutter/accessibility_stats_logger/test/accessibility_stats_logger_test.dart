@@ -8,31 +8,35 @@ class MockAccessibilityStatsLoggerPlatform
     with MockPlatformInterfaceMixin
     implements AccessibilityStatsLoggerPlatform {
   @override
-  Future<String?> getPlatformVersion() => Future.value('42');
-
-  @override
-  Future<String?> getAccessibilityStats() {
-    // TODO: implement getAccessibilityStats
-    throw UnimplementedError();
+  Future<Map<String, Object?>> getAccessibilityStats() {
+    Map<String, Object?> result = {};
+    result.addAll({"test1": "value1", "test2": "value2"});
+    return Future.value(result);
   }
 }
 
 void main() {
   final AccessibilityStatsLoggerPlatform initialPlatform =
       AccessibilityStatsLoggerPlatform.instance;
+  final AccessibilityStatsLogger accessibilityStatsLoggerPlugin =
+      AccessibilityStatsLogger();
+
+  setUp(() {
+    MockAccessibilityStatsLoggerPlatform fakePlatform =
+        MockAccessibilityStatsLoggerPlatform();
+    AccessibilityStatsLoggerPlatform.instance = fakePlatform;
+  });
 
   test('$MethodChannelAccessibilityStatsLogger is the default instance', () {
     expect(
         initialPlatform, isInstanceOf<MethodChannelAccessibilityStatsLogger>());
   });
 
-  test('getPlatformVersion', () async {
-    AccessibilityStatsLogger accessibilityStatsLoggerPlugin =
-        AccessibilityStatsLogger();
-    MockAccessibilityStatsLoggerPlatform fakePlatform =
-        MockAccessibilityStatsLoggerPlatform();
-    AccessibilityStatsLoggerPlatform.instance = fakePlatform;
-
-    expect(await accessibilityStatsLoggerPlugin.getPlatformVersion(), '42');
+  test('getAccessibilityStats returns map', () async {
+    expect(
+        await accessibilityStatsLoggerPlugin
+            .getAccessibilityStats()
+            .then((value) => value.toString()),
+        "[test1, test2, test3, test4]");
   });
 }

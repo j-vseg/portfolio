@@ -16,7 +16,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _accessibilityStatsLogger = 'Unknown';
+  Map<String, Object?> _accessibilityStatsLogger = {};
   final _accessibilityStatsLoggerPlugin = AccessibilityStatsLogger();
 
   @override
@@ -26,13 +26,12 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> initAccessibilityStatsLoggerState() async {
-    String accessibilityStatsLogger;
+    Map<String, Object?> accessibilityStatsLogger;
     try {
       accessibilityStatsLogger =
-          await _accessibilityStatsLoggerPlugin.getAccessibilityStats() ??
-              'Unknown Accessibility Stats';
+          await _accessibilityStatsLoggerPlugin.getAccessibilityStats();
     } on PlatformException {
-      accessibilityStatsLogger = 'Failed to get Accessibility Stats.';
+      accessibilityStatsLogger = {};
     }
     if (!mounted) return;
 

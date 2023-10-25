@@ -2,25 +2,15 @@ import Flutter
 import UIKit
 import XCTest
 
-// swiftlint:disable force_cast
-
 @testable import accessibility_stats_logger
 
 class RunnerTests: XCTestCase {
 
-  func testGetPlatformVersion() {
-    let plugin = AccessibilityStatsLoggerPlugin()
+  func testStringFormatter() {
+    var inputString = "{\"test1\": \"value1\", \"test2\": \"value2\"}"
+    var expectedString = "[\"test1\": \"value1\", \"test2\": \"value2\"]"
 
-    let call = FlutterMethodCall(methodName: "getPlatformVersion", arguments: [])
-
-    let resultExpectation = expectation(description: "result block must be called.")
-    plugin.handle(call) { result in
-      XCTAssertEqual(result as! String, "iOS " + UIDevice.current.systemVersion)
-      resultExpectation.fulfill()
-    }
-    waitForExpectations(timeout: 1)
+    assertEquals(expectedString, Formatter.formattedString(inputString))
   }
 
 }
-
-// swiftlint:enable force_cast

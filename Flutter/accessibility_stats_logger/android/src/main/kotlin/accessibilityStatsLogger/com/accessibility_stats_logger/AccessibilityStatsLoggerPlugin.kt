@@ -24,26 +24,17 @@ class AccessibilityStatsLoggerPlugin: FlutterPlugin, MethodCallHandler {
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    } 
-    else if (call.method == "getAccessibilityStats") {
-      val collection = mutableMapOf<String, Serializable>()
-      collection.putAll(AccessibilityCollector.collect(context!!))
-      collection.putAll(SystemCollector.collect(context!!))
-      collection.putAll(PreferencesCollector.collect(context!!))
+    if (call.method == "getAccessibilityStats") {
+      try {
+        val collection = mutableMapOf<String, Serializable>()
+        collection.putAll(AccessibilityCollector.collect(context!!))
+        collection.putAll(PreferencesCollector.collect(context!!))
+        collection.putAll(SystemCollector.collect(context!!))
 
-      Log.d("AccessibilityCollector", AccessibilityCollector.collect(context!!).toString())
-      Log.d("SystemCollector", SystemCollector.collect(context!!).toString())
-      Log.d("PreferencesCollector: ", PreferencesCollector.collect(context!!).toString())
-
-      var accessibilityData = collection.toString()
-      accessibilityData = accessibilityData.replace("=", "\": \"");
-      accessibilityData = accessibilityData.replace(", ", "\", \"");
-      accessibilityData = accessibilityData.replace("{", "{\"");
-      accessibilityData = accessibilityData.replace("}", "\"}");
-
-      result.success(accessibilityData)
+        result.success(Formatter.formatString(collection.toString()))
+      } catch (e: Exception) {
+        result.error("AccessibilityStatsLogger", "Something went wrong formatting the string", e.toString())
+      }
     }
     else {
       result.notImplemented()
@@ -52,5 +43,19 @@ class AccessibilityStatsLoggerPlugin: FlutterPlugin, MethodCallHandler {
 
   override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
     channel.setMethodCallHandler(null)
+    context = null
+  }
+}
+
+class Formatter() {
+  companion object {
+    fun formatString(string: String): String {
+      var dataString = string
+      dataString =  dataString.replace("=", "\": \"");
+      dataString =  dataString.replace(", ", "\", \"");
+      dataString = dataString.replace("{", "{\"");
+      dataString = dataString.replace("}", "\"}");
+      return dataString
+    }
   }
 }

@@ -10,17 +10,20 @@ public class AccessibilityStatsLoggerPlugin: NSObject, FlutterPlugin {
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     switch call.method {
-    case "getPlatformVersion":
-      result("iOS " + UIDevice.current.systemVersion)
     case "getAccessibilityStats":
       var collected: [String: String]? = AccessibilityStats(options: .all).collect(window: UIWindow())
-      var accessibilityData = collected?.description ?? "[]"
-      accessibilityData = accessibilityData.replacingOccurrences(of: "[", with: "{")
-      accessibilityData = accessibilityData.replacingOccurrences(of: "]", with: "}")
-
-      result(accessibilityData)
+      result(Formatter.stringFormatter(string: collected?.description ?? "[]"))
     default:
       result(FlutterMethodNotImplemented)
     }
+  }
+}
+
+enum Formatter {
+  public static func stringFormatter(string: String) -> String {
+    var formattedString = string
+      formattedString = formattedString.replacingOccurrences(of: "[", with: "{")
+      formattedString = formattedString.replacingOccurrences(of: "]", with: "}")
+    return formattedString
   }
 }

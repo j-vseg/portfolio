@@ -4,6 +4,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import kotlin.test.Test
 import org.mockito.Mockito
+import kotlin.test.assertEquals
 
 /*
  * This demonstrates a simple unit test of the Kotlin portion of this plugin's implementation.
@@ -15,13 +16,10 @@ import org.mockito.Mockito
 
 internal class AccessibilityStatsLoggerPluginTest {
   @Test
-  fun onMethodCall_getPlatformVersion_returnsExpectedValue() {
-    val plugin = AccessibilityStatsLoggerPlugin()
+  fun formatString_returnsExpectedValue() {
+    val inputString = "{test1=value1, test2=value2}"
+    val expectedString = "{\"test1\": \"value1\", \"test2\": \"value2\"}"
 
-    val call = MethodCall("getPlatformVersion", null)
-    val mockResult: MethodChannel.Result = Mockito.mock(MethodChannel.Result::class.java)
-    plugin.onMethodCall(call, mockResult)
-
-    Mockito.verify(mockResult).success("Android " + android.os.Build.VERSION.RELEASE)
+    assertEquals(expectedString, Formatter.formatString(inputString))
   }
 }
