@@ -3,11 +3,29 @@
 This Flutter plugin is able to gather Accessibility data from iOS and Android. It gathers data from the ScreenReader, VoiceOver, font size and many more. 
 
 ## Getting Started
+### Installation
+```console
+flutter pub add accessibility_stats_logger
+```
+```properties
+dependencies:
+  accessibility_stats_logger: ^1.1.0
+```
+
+### Import
+```dart
+import 'package:accessibility_stats_logger/accessibility_stats_logger.dart';
+```
+
+### Usage
 All you need to gather the data is to make an instance to this plugin and call the method ```getAccessibiltyStats()```. This method will return a ```Map<String, Object?>``` with the accessiblity data based on what device and platform you are using.
+```dart
+Map<String, Object?> accessibilityMap = AccessibilityStatsLogger().getAccessibiltyStats(); 
+```
 
 ## The responses
-### Android: 
-```
+### Android
+```json
 {
     "isTouchExplorationEnabled": "false", 
     "isTalkBackEnabled": "false", 
@@ -34,7 +52,7 @@ All you need to gather the data is to make an instance to this plugin and call t
 ```
 
 ### iOS:
-```
+```json
 {
     "Accessibility_isSpeakScreenEnabled": "false", 
     "Accessibility_isSpeakSelectionEnabled": "false",
@@ -73,6 +91,9 @@ All you need to gather the data is to make an instance to this plugin and call t
     "Accessibility_isGuidedAccessEnabled": "false"
 }
 ```
+
+## License 
+[MIT License](./LICENSE)
 
 ## Acknowledgments
 Inspiration, code snippets, etc.
