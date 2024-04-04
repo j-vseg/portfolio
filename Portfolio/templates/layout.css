@@ -2,8 +2,15 @@
 
 body {
   margin: 0;
-  background-color: #001220 !important; 
+  overflow-x: hidden;
+  background-image: url('../assets/paws-black-2.svg');
+  background-size: cover;
+  background-size: 100vh;
+  background-color: #31363F;
+
+  width: 100vw;
 }
+
 h1 {
   font-family: 'Poppins', sans-serif !important;
   font-size: 25px !important;
@@ -19,50 +26,61 @@ h2 {
 }
 h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: bold !important;
   color: white;
 }
-p, li {
+p, li, a {
    font-family: 'Poppins', sans-serif;
    font-size: 18px;
    color: white;
  }
+li::marker { color: #76ABAE; }
 
- .title {
+.secondary {
+  color: #bee5e7 ;
+}
+.title {
    font-family: 'Poppins', sans-serif !important;
    font-size: 30px !important;
    font-weight: 900 !important;
- }
+}
 .light-blue { color: #00d4ff; }
-.light-green { color: rgba(158, 232, 192); }
+.light-green { color: #76ABAE; }
 .dark-yellow { color: rgba(219, 175, 19); }
 .blue { color: #0b369c; }
-.ocean-green { color: #69fab9; }
-.background-secondary { background-color: #071a29;}
-
-/*button, a[type="button"] {
-  font-family: 'Poppins', sans-serif;
-  margin-top: 25px;
-  border-radius: 25px;
-  border: 2px solid white;
-  background: transparent;
-  padding: 5px 10px;
-  font-size: 12px;
-  color: white;
+.ocean-green { color: #34A0A4; }
+.background-secondary { background-color: #0b0b0e;}
+.m-100 { 
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-a[type="button"]:hover {
-  color: white;
-  text-decoration: none;
-}*/
+
+@media screen and (max-width: 576px) {
+  .m-100 { 
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+.p-100 { 
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .p-100 { 
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 button, a[type="button"] {
   font-family: 'Poppins', sans-serif;
   margin-top: 25px;
-  background: #69fab9;
+  background: #76ABAE;
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 12px;
-  color: #071a29;
+  color: black;
   text-decoration: none;
   font-weight: 900;
 }
@@ -72,13 +90,22 @@ a[type="button"]:hover {
 
 /* Scroll animation */
 .reveal{
-  position: relative;
-  transform: translateY(150px);
   opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
   transition: 1s all ease;
 }
-
-.reveal.active{
-  transform: translateY(0);
+.show {
   opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+@media(prefers-reduced-motion) {
+  .reveal {
+    transition: none;
+    filter: blur(0);
+    transform: translateX(0);
+  }
 }
