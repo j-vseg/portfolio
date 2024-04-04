@@ -33,7 +33,7 @@ I was tasked by creating the Android version for the Stolpersteine app. Other me
 
 ## Demo
 <p float="left">
-  <video loop muted autoplay src="../Portfolio/assets/projects/stolpersteine/stolpersteine.mp4" width="250"></video>
+  <img src="../Portfolio/assets/projects/stolpersteine/stolpersteine.mp4" width="250" />
 </p>
 
 ## Designs

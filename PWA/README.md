@@ -23,7 +23,7 @@ Weatheristics is an individual project I worked on for 4 weeks. I was asked to b
 
 ## Demo
 <p float="left">
-    <video loop muted autoplay src="../Portfolio/assets/projects/weatheristics/weatheristics.mp4" width="250"></video>
+    <img src="../Portfolio/assets/projects/weatheristics/weatheristics.mp4" width="250" />
 </p>
 
 ## Designs
