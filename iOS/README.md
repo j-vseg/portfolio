@@ -27,7 +27,7 @@ Based on this research we built this application.
 
 ## Demo
 <p float="left">
-  <video loop muted autoplay src="../Portfolio/assets/projects/vegiscan/vegiscan.mp4" width="250"></video>
+  <img src="../Portfolio/assets/projects/vegiscan/vegiscan.mp4" width="250" />
 </p>
 
 ## Installation
