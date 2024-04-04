@@ -1,6 +1,22 @@
 # Accessibility Statistics Logger
 
+## Table of Contents
+- [Description](#description)
+- [Getting started](#getting-started)
+- [The responses](#the-responses)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## Description
 This Flutter plugin is able to gather Accessibility data from iOS and Android. It gathers data from the ScreenReader, VoiceOver, font size and many more. 
+
+### Languages
+
+<p float="left">
+  <img src="../../Portfolio/assets/icons/skills/flutter.svg" width="35" />
+  <img src="../..//Portfolio/assets/icons/skills/android.svg" width="35" />
+  <img src="../../Portfolio/assets/icons/skills/apple.svg" width="35" />
+</p>
 
 ## Getting Started
 ### Installation

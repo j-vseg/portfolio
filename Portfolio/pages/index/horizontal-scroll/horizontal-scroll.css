@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.scroll {
+  border-radius: 25px 25px 0 0;
+  padding-top: 25px;
+  box-shadow: 0 0 0, 0px -20px 50px rgba(0, 0, 0, 0.4);
+}
+.horizontal-scroll,  .horizontal-scroll-sm {
+  background-image: url(../../../assets/backgrounds/blurry-blobs.svg);
+  background-size: cover;
+}
+.horizontal-scroll-sm {
+  display: none;
+
+  padding: 0 2rem 0 2rem;
+}
+.horizontal-scroll h1, .horizontal-scroll-sm h1 {
+  font-size: 5rem !important;
+}
+@media screen and (max-width: 576px) {
+  .p-100 { 
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .horizontal-scroll h1, .horizontal-scroll-sm h1 {
+    font-size: 3.5rem !important;
+  }
+}
+.horizontal-scroll .panel.description p, 
+.horizontal-scroll-sm .panel-sm.description p {
+  font-size: 1rem !important;
+  color: #68727d;
+}
+.horizontal-scroll .panels {
+  padding-top: 100px;
+	width:fit-content;
+	display:flex;
+	flex-wrap:nowrap;
+}
+.horizontal-scroll-sm .panel-sm {
+  padding-top: 100px;
+}
+
+.horizontal-scroll .panel {
+  flex-shrink:0;
+	padding-right:4rem;
+	padding-left:4rem;
+}
+.horizontal-scroll .panel.description {
+  width: auto;
+  max-width: 35rem;
+}
+.horizontal-scroll .panel .project {
+  width: 38dvw;
+  height: calc(100dvh - 6rem * 2.3);
+
+  padding: 25px 25px 0 25px;
+  background-color: red;
+  border-radius: 25px;
+
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  transition: all .3s ease;
+}
+.horizontal-scroll-sm .panel-sm .project {
+  padding: 25px 25px 0 25px;
+  background-color: red;
+  border-radius: 25px;
+
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  transition: all .3s ease;
+}
+.panel .project.stolpersteine,
+.panel-sm .project.stolpersteine {
+  background-color: #C99F30;
+}
+.panel .project.weatheristics,
+.panel-sm .project.weatheristics {
+  background-color: #5680CE;
+}
+.panel .project.vegiscan,
+.panel-sm .project.vegiscan {
+  background-color: #416446;
+}
+@media screen and (max-width: 768px) {
+	.horizontal-scroll .panel .project {
+		width: 80dvw;
+		height: 60dvh;
+	}
+  .horizontal-scroll .panel.description {
+    width: 40dvh;
+  }
+}
+
+.panel .project:hover,
+.panel-sm .project:hover {
+	background-color: green;
+	transform: scale(1.1, 1.1);
+}
+.panel .project.stolpersteine:hover,
+.panel-sm .project.stolpersteine:hover {
+  background-color: #d7b454;
+}
+.panel .project.weatheristics:hover,
+.panel-sm .project.weatheristics:hover {
+  background-color: #7399DB;
+}
+.panel .project.vegiscan:hover,
+.panel-sm .project.vegiscan:hover {
+  background-color: #56845D;
+}
+.panel .project:hover ~ .panel .project:not(:hover),
+.panel-sm .project:hover ~ .panel-sm .project:not(:hover) {
+	transform: scale(0.9, 0.9);
+}
+.panel .visit, .panel-sm .visit, .visit-hover {
+	position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: auto;
+  padding: .5rem;
+  transition: all .3s ease;
+}
+.visit-hover {
+  display: none;
+  transition: all 1s ease;
+}
+.panel .visit img, .panel-sm .visit img {
+  width: 35px;
+}
+.visit-hover img {
+  width: 15px;
+}
+.visit-hover .link p {
+  margin: 0;
+  margin-right: 2rem;
+}
+.panel .img-box, .panel-sm .img-box {
+	display: flex;
+  justify-content: center;
+  align-items: end;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  width: 100%;
+}
+.panel .project:hover .visit-hover,
+.panel-sm .project:hover .visit-hover {
+	display: flex;
+}
+.visit-hover .link a {
+  text-decoration: none;
+  display: flex;
+
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+}
+.visit-hover .link a:hover{
+	background-color: green;
+  border-radius: 1rem;
+}
+.project.stolpersteine .visit-hover .link a:hover{
+	background-color: #a88523;
+  border-radius: 1rem;
+}
+.project.project.weatheristics .visit-hover .link a:hover{
+	background-color: #385c9f;
+  border-radius: 1rem;
+}
+.project.project.vegiscan .visit-hover .link a:hover{
+	background-color: #213724;
+  border-radius: 1rem;
+}
+.panel .project:hover .visit,
+.panel-sm .project:hover .visit {
+	display: none;
+}
+
+/* Draggable slider */
+.skillset {
+  background-image: url(../../../assets/backgrounds/blurry-blobs.svg);
+  background-size: cover;
+
+  padding-bottom: 200px;
+}
+.slider-wrapper {
+  padding: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  height: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+
+  background-color: white;
+  border-radius: 1rem;
+  margin-right: 1.5rem;
+}
+.slide img {
+  width: 2.5rem;
+  margin: 2rem;
+}
+.skillset .arrow {
+  display: flex;
+  justify-content: center;
+}
+.skillset .arrow img {
+  width: 1rem;
+}
+.skillset .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 50px;
+  
+  width: 45dvh;
+  height: 45dvh;
+
+  padding: 2rem 3rem;
+  border-radius: 100%;
+  background: radial-gradient(#691ee2 55%, #decaff 100%);
+  animation: purple-flicker 4s ease-in-out infinite;
+}
+.skillset .content .content-box{
+  display: none;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(-50%, -50%);
+}
+.skillset .content .content-box:nth-child(6){
+  display: block;
+}
+.skillset .slide:nth-child(6){
+  display: block;
+  animation: flicker 4s ease-in-out infinite;
+}
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
+  }
+}
+@keyframes purple-flicker {
+  0% {
+    box-shadow: 0 0 10rem #691ee2;
+  }
+  50% {
+    box-shadow: 0 0 5rem #691ee2;
+  }
+  100% {
+    box-shadow: 0 0 10rem #691ee2;
+  }
+}
+
+.skillset #circle1, .skillset #circle2 {
+  width: 15dvh;
+  height: 15dvh;
+  margin: 8dvh;
+  border-radius: 100%;
+
+  background: radial-gradient(#691ee2 55%, #decaff 100%);
+  animation: purple-flicker 4s ease-in-out infinite;
+
+  filter: blur(4px);
+}
+@media screen and (max-width: 992px) {
+  .skillset #circle1, .skillset #circle2 {
+    margin: 2dvh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skillset #circle1, .skillset #circle2 {
+    display: none !important;
+  }
+}
