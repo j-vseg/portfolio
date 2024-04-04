@@ -1,0 +1,27 @@
+.showcase-wrapper {
+  width: 100%;
+  height: 2rem;
+  opacity: 0;
+  background-image: url('../../../assets/cat-2.svg');
+  background-position: 0 50%;
+  background-repeat: repeat-x;
+  animation: opacity 2s ease-in-out 1s forwards, bg-position 60s linear infinite;
+}
+
+@keyframes opacity {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes bg-position {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
