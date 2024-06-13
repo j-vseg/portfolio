@@ -11,7 +11,7 @@
 - [Credits](#credits)
 
 ## Description
-Weatheristics is an individual project I worked on for 4 weeks. I was asked to build a weather application. The application shows the weather and sends push-notification if it is about to rain.
+Weatheristics is an individual school project I worked on for 4 weeks. I was asked to build a weather application. The application shows the weather and sends push-notification if it is about to rain.
 
 ### Languages
 
