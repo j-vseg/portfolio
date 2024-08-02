@@ -32,17 +32,28 @@
 
   <!-- Showcase -->
   <link rel="stylesheet" href="pages/index/showcase/showcase.css">
-  </head>
+  
+  <!-- Multi language -->
+   <script defer src="language/language.js"></script>
+
+</head>
 <body id="body">
 
   <nav class="navbar">
     <ul>
-      <li><a href="index.html#showcase">Works</a></li>
-      <li><a href="index.html#skills">Skills</a></li>
-      <li><a href="index.html#experience">Experience</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a id="lang_works" href="index.html#showcase">Works</a></li>
+      <li><a id="lang_skills" href="index.html#skills">Skills</a></li>
+      <li><a id="lang_experience" href="index.html#experience">Experience</a></li>
+      <li><a id="lang_contact" href="index.html#contact">Contact</a></li>
     </ul>
   </nav>
+
+  <div class="d-flex justify-content-end">
+    <select id="switch-language">
+      <option value="en" selected>English</option>
+      <option value="nl">Nederlands</option>
+    </select>
+  </div>
 
   <div id="header" class="container header">
     <div class="row d-flex align-items-center justify-content-center content">
@@ -345,7 +356,7 @@
           <div class="content-box">
             <h2>CCS</h2>
             <h3>Creative styling</h3>
-            <p> CSS shapes the aesthetic and interactive facets of the web. I sculpt digital experiences with precision, infusing creativity and elegance into every design.</p>
+            <p>CSS shapes the aesthetic and interactive facets of the web. I sculpt digital experiences with precision, infusing creativity and elegance into every design.</p>
           </div>
           <div class="content-box">
             <h2>Bootstrap</h2>
@@ -384,11 +395,11 @@
           </div>
           <div class="content-box">
             <h2>Android (Kotlin)</h2>
-            <p> Android empowers developers to create innovative and engaging apps. I design intuitive user interfaces and leverage native functionalities to deliver exceptional experiences.</p>
+            <p>Android empowers developers to create innovative and engaging apps. I design intuitive user interfaces and leverage native functionalities to deliver exceptional experiences.</p>
           </div>
           <div class="content-box">
             <h2>Apple (Swift)</h2>
-            <p> I develop apps that leverage the full potential of iOS and macOS, delivering a premium experience to users.</p>
+            <p>I develop apps that leverage the full potential of iOS and macOS, delivering a premium experience to users.</p>
           </div>
         </div>
         <div id="circle2"></div>
@@ -400,7 +411,7 @@
         <div class="title-box mb-5">
           <h1>Experience</h1>
           <h1 class="secondary">History</h1>
-          <p>For now, still studying! </p>
+          <p>For now, still studying!</p>
         </div>
         <div class="video-box">
           <video src="assets/click_me_arrow.webm" autoplay muted loop></video>

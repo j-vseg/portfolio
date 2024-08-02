@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
+/* Language button */
+.switch-language {
+  margin-right: 20px;
+}
+.switch-language img { 
+  width: 30px;
+}
+
 /* Header */
 .header .content { 
   height: 100vh;
