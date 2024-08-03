@@ -52,3 +52,22 @@ footer .contents p {
     padding: 6rem 0 8rem 0;
   }
 }
+
+/* Language button */
+.language p {
+  margin: 0 !important;
+}
+#switch-language {
+  margin-left: 1rem;
+}
+#switch-language img {
+  height: 30px;
+}
+#switch-language .dropdown-menu {
+  background-color: #76abae;
+  min-width: 0 !important;
+}
+#btnLang { border: none; }
+#btnLang img {
+ margin-right: 8px;
+}

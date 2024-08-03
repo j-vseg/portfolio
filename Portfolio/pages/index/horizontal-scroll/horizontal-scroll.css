@@ -15,7 +15,7 @@
   padding: 0 2rem 0 2rem;
 }
 .horizontal-scroll h1, .horizontal-scroll-sm h1 {
-  font-size: 5rem !important;
+  font-size: 4rem !important;
 }
 @media screen and (max-width: 576px) {
   .p-100 { 
@@ -23,7 +23,7 @@
     padding-bottom: 50px;
   }
   .horizontal-scroll h1, .horizontal-scroll-sm h1 {
-    font-size: 3.5rem !important;
+    font-size: 2.5rem !important;
   }
 }
 .horizontal-scroll .panel.description p, 
@@ -267,7 +267,12 @@
   .skillset .content {
     width: 100vw;
     height: 100vw;
-
+  }
+  .skillset .content .content-box h1 {
+    font-size: 20px !important;
+  }
+  .skillset .content .content-box p {
+    font-size: 15px !important;
   }
 }
 .skillset .content .content-box{

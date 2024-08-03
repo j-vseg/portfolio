@@ -1,11 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
-/* Language button */
-.switch-language {
-  margin-right: 20px;
+/* Alert */
+#df-alert {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  background-color: rgba(11, 11, 14, 0.85);
+  backdrop-filter: blur(4px);
+
+  display: none;
 }
-.switch-language img { 
-  width: 30px;
+.alert {
+  background-color: #0b0b0e;
+  border: .5px solid #76ABAE !important;
+  width: 400px;
+  text-align: center;
+}
+.alert h1 {
+  /* color: #0b0b0e !important; */
+  height: 60px;
+}
+.alert .btn-box button {
+  margin: 5px;
+  text-align: center;
+  border-radius: 12px;
+}
+.alert .btn-box img {
+  height: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  #df-alert {
+    padding: 25px;
+    text-align: center;
+  }
 }
 
 /* Header */
@@ -50,6 +79,7 @@
   }
   .header .title-box { 
     display: block;
+    text-align: center;
   }
   .header #cat {
     width: 100%;
@@ -160,7 +190,7 @@
   background-size: cover;
 }
 .experiences h1 {
-  font-size: 5rem !important;
+  font-size: 4rem !important;
 }
 .experiences p {
   color: #acabab !important;
