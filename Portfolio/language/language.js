@@ -4,7 +4,7 @@ const alertHeader = document.getElementById('alert-header');
 const alertBtnLangEn = document.getElementById('alertBtnLangEn');
 const alertBtnLangNl = document.getElementById('alertBtnLangNl');
 
-const langCookie = getCookie('preferedLanguage');
+const langCookie = getCookie('preferredLanguage');
 const btnLang = document.getElementById('btnLang');
 
 body.style.overflowY = 'hidden';
@@ -30,7 +30,7 @@ alertBtnLangNl.addEventListener("mouseover", function() {
     alertHeader.innerHTML = "Kies je voorkeurstaal:";
 });
 alertBtnLangEn.addEventListener("mouseover", function() {
-    alertHeader.innerHTML = "Select your prefered langauge:";
+    alertHeader.innerHTML = "Select your preferred langauge:";
 });
 
 function selectedLanguage(language) {
@@ -50,7 +50,7 @@ function selectedLanguage(language) {
             var month = d.getMonth();
             var day = d.getDate();
             const nextYear = new Date(year + 1, month, day);
-            document.cookie = `preferedLanguage=nl; expires=${nextYear.toUTCString()}`
+            document.cookie = `preferredLanguage=nl; expires=${nextYear.toUTCString()}`
         })
         .catch((error) => console.log(error));
     }
@@ -70,7 +70,7 @@ function selectedLanguage(language) {
             var month = d.getMonth();
             var day = d.getDate();
             const nextYear = new Date(year + 1, month, day);
-            document.cookie = `preferedLanguage=en; expires=${nextYear.toUTCString()}`
+            document.cookie = `preferredLanguage=en; expires=${nextYear.toUTCString()}`
 
         })
         .catch((error) => console.log(error));
