@@ -26,9 +26,7 @@ Based on this research we built this application.
 - Be able to view your latest scans
 
 ## Demo
-<p float="left">
-  <img src="../Portfolio/assets/projects/vegiscan/vegiscan.mp4" width="250" />
-</p>
+[Demo](../Portfolio/assets/projects/vegiscan/vegiscan.mp4)
 
 ## Installation
 You can open the application in XCode or a virtual machine and it should install everyting needed automaticly. 

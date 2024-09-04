@@ -22,9 +22,7 @@ Weatheristics is an individual school project I worked on for 4 weeks. I was ask
 </p>
 
 ## Demo
-<p float="left">
-    <img src="../Portfolio/assets/projects/weatheristics/weatheristics.mp4" width="250" />
-</p>
+[Demo](../Portfolio/assets/projects/weatheristics/weatheristics.mp4)
 
 ## Designs
 <p float="left">

@@ -32,9 +32,7 @@ I was tasked by creating the Android version for the Stolpersteine app. Other me
 - Your able to switch between languages
 
 ## Demo
-<p float="left">
-  <img src="../Portfolio/assets/projects/stolpersteine/stolpersteine.mp4" width="250" />
-</p>
+[Demo](../Portfolio/assets/projects/stolpersteine/stolpersteine.mp4)
 
 ## Designs
 <p float="left">
