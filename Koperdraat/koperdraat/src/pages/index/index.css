@@ -1,0 +1,77 @@
+/* Over mij */
+.over-mij {
+  position: relative;
+  z-index: -2;
+}
+
+/* Projects */
+.projecten .bundel {
+  background-color: rgba(242, 242, 242, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+  margin: 0;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.projecten .bundel .img-box {
+  margin: 0;
+  margin-left: 3rem;
+  width: 62.5%;
+}
+.projecten .bundel:nth-child(odd) .img-box {
+  margin: 0;
+  margin-right: 3rem;
+}
+.projecten .bundel .text-box {
+  width: 37.5%;
+}
+.projecten img {
+  border-radius: 2rem;
+}
+.projecten button {
+  width: auto !important;
+}
+.projecten .bundle button {
+  position: absolute;
+  z-index: 1;
+}
+.projecten button svg {
+  margin-left: 10px;
+  width: 22px;
+}
+@media screen and (max-width: 768px) {
+  .projecten .bundel .img-box {
+    width: 60%;
+  }
+  .projecten .bundel .text-box {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .projecten .bundel .img-box {
+    width: 50%;
+  }
+  .projecten .bundel .text-box {
+    width: 50%;
+  }
+}
+.view-more p {
+  font-weight: bold !important;
+  margin: 0;
+  margin-right: 3rem;
+}
+
+/* Line Svg */
+svg.squiggle-index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 180vw;
+  z-index: -1;
+}
+
+svg.squiggle-index path {
+  stroke-width: 0.5rem;
+}

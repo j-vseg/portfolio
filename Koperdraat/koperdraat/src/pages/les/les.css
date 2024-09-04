@@ -1,0 +1,61 @@
+/* Projects */
+.les .bundel {
+    background-color: rgba(242, 242, 242, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    margin: 0;
+    border-radius: 3rem;
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.les .bundel .img-box {
+    margin: 0;
+    margin-left: 3rem;
+    width: 62.5%;
+}
+
+.les .bundel:nth-child(odd) .img-box {
+    margin: 0;
+    margin-right: 3rem;
+}
+
+.les .bundel .text-box {
+    width: 37.5%;
+}
+
+.les .bundel .accordion {
+    width: 100%;
+}
+
+.les img {
+    border-radius: 2rem;
+}
+
+.les button {
+    width: auto !important;
+}
+
+.les .bundle button {
+    position: absolute;
+    z-index: 1;
+}
+
+.les button.accordion-button {
+    width: 100% !important;
+}
+
+.les button svg {
+    margin-left: 10px;
+    width: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .les .bundel .img-box {
+        width: 60%;
+    }
+
+    .les .bundel .text-box {
+        width: 40%;
+    }
+}

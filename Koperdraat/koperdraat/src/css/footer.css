@@ -1,0 +1,8 @@
+footer {margin-top: 75px;}
+footer, footer p, footer p a, footer p a:hover {
+    background-color: #004a7c;
+    color: white;
+}
+footer h6, footer i { color: #f9d837;}
+footer .social {text-decoration: none;}
+.copyright {color: white;}

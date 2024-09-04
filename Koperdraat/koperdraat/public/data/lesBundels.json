@@ -1,0 +1,190 @@
+[
+    {
+        "id": 0,
+        "naam": "Energie",
+        "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+        "korteBeschrijving": "Beschrijving bundel A",
+        "beschrijving": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "leerDoelen": [
+            "Leerdoel 1",
+            "Leerdoel 2",
+            "Leerdoel 3"
+        ],
+        "lessen": [
+            {
+                "id": 0,
+                "naam": "Les A",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les A",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            },
+            {
+                "id": 1,
+                "naam": "Les B",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les B",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            },
+            {
+                "id": 2,
+                "naam": "Les C",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les C",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "naam": "Les bundel B",
+        "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+        "korteBeschrijving": "Beschrijving bundel B",
+        "beschrijving": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "leerDoelen": [
+            "Leerdoel 1",
+            "Leerdoel 2",
+            "Leerdoel 3"
+        ],
+        "lessen": [
+            {
+                "id": 3,
+                "naam": "Les A",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les A",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            },
+            {
+                "id": 4,
+                "naam": "Les B",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les B",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            },
+            {
+                "id": 5,
+                "naam": "Les C",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les C",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "naam": "Les bundel C",
+        "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+        "korteBeschrijving": "Beschrijving bundel C",
+        "beschrijving": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "leerDoelen": [
+            "Leerdoel 1",
+            "Leerdoel 2",
+            "Leerdoel 3"
+        ],
+        "lessen": [
+            {
+                "id": 6,
+                "naam": "Les A",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les A",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            },
+            {
+                "id": 7,
+                "naam": "Les B",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les B",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            },
+            {
+                "id": 8,
+                "naam": "Les C",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les C",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "naam": "Les bundel D",
+        "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+        "korteBeschrijving": "Beschrijving bundel D",
+        "beschrijving": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "leerDoelen": [
+            "Leerdoel 1",
+            "Leerdoel 2",
+            "Leerdoel 3"
+        ],
+        "lessen": [
+            {
+                "id": 9,
+                "naam": "Les A",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les A",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            },
+            {
+                "id": 10,
+                "naam": "Les B",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les B",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            },
+            {
+                "id": 11,
+                "naam": "Les C",
+                "thumbnail": "https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp",
+                "beschrijving": "Beschijving les C",
+                "leerDoelen": [
+                    "Leerdoel 1",
+                    "Leerdoel 2",
+                    "Leerdoel 3"
+                ]
+            }
+        ]
+    }
+]
