@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Languages](#languages)
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)

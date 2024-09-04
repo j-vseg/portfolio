@@ -191,6 +191,7 @@
 	background-color: #213724;
   border-radius: 1rem;
 }
+
 .project.project.qg-eventech .visit-hover .link a:hover{
 	background-color: rgb(13, 13, 45);
   border-radius: 1rem;
@@ -204,7 +205,6 @@
     display: none;
   }
 }
-
 
 /* Draggable slider */
 .skillset {

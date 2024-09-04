@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Languages](#languages)
 - [Features](#features)
 - [Demo](#demo)
 - [Designs](#designs)
@@ -36,7 +37,6 @@ Weatheristics is an individual school project I worked on for 4 weeks. I was ask
 - Be able to get weather information from our cities
 - Be able to send push notifications when it is about to rain or snow
 
-
 ## Installation
 You can open the application in Visual Studio Code and run npm install in the root of the project to install all the needed packages.
 ```
@@ -46,4 +46,3 @@ npm install
 ## Credits 
 Used libraries:
 - [Open Weather API](https://openweathermap.org/api): I used this API to retrieve all the weather data.
-

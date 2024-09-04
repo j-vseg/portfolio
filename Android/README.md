@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Languages](#languages)
 - [Features](#features)
 - [Demo](#demo)
 - [Designs](#designs)
@@ -11,14 +12,13 @@
 
 ## Description
 
-Stolpersteine is a group project that was requested by [Stichting 18 September](https://stichting18september.nl/) throughout school. We were asked to update an outdated web application from Stichting 18 September. 
+Stolpersteine is a group project that was requested by [Stichting 18 September](https://stichting18september.nl/). We were asked to update an outdated web application from Stichting 18 September. 
 
 Stolpersteine are memorial stones that are placed by Stichting 18 September. Their functionality is the help remember the people who died during the Holocaust. The stones are covered in gold, each stone for one victim. The stones are placed at the place where the person has last lived freely. More information can be found [here](https://en.wikipedia.org/wiki/Stolperstein).
 
 I was tasked by creating the Android version for the Stolpersteine app. Other members of the group were tasked with creating the PWA and iOS version. 
 
 ### Languages
-
 <p float="left">
     <img src="../Portfolio/assets/icons/skills/android.svg" width="35" />
 </p>
