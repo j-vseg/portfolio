@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
+/* Alert */
+#df-alert {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  background-color: rgba(11, 11, 14, 0.85);
+  backdrop-filter: blur(4px);
+
+  display: none;
+}
+.alert {
+  background-color: #0b0b0e;
+  border: .5px solid #76ABAE !important;
+  width: 400px;
+  text-align: center;
+}
+.alert h1 {
+  /* color: #0b0b0e !important; */
+  height: 60px;
+}
+.alert .btn-box button {
+  margin: 5px;
+  text-align: center;
+  border-radius: 12px;
+}
+.alert .btn-box img {
+  height: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  #df-alert {
+    padding: 25px;
+    text-align: center;
+  }
+}
+
 /* Header */
 .header .content { 
   height: 100vh;
@@ -42,6 +79,7 @@
   }
   .header .title-box { 
     display: block;
+    text-align: center;
   }
   .header #cat {
     width: 100%;
@@ -106,6 +144,44 @@
   .quotes #quote-cat-animation { display: none;}
 }
 
+/* skillset */
+.skillset .title {
+  display: flex;
+}
+.skillset .video-box video {
+  width: 100%;
+}
+.skillset .title-box {
+  width: 80%;
+}
+.skillset .video-box {
+  width: 20%;
+}
+@media screen and (max-width: 992px) {
+  .skillset .title-box {
+    width: 70%;
+  }
+  .skillset .video-box {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+	.skillset .title-box {
+    width: 40%;
+  }
+  .skillset .video-box {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .skillset .title-box {
+    width: 40%;
+  }
+  .skillset .video-box {
+    width: 60%;
+  }
+}
+
 /* Experience */
 .experiences {
   padding: 0 5rem 15rem 5rem;
@@ -114,18 +190,66 @@
   background-size: cover;
 }
 .experiences h1 {
-  font-size: 5rem !important;
+  font-size: 4rem !important;
 }
 .experiences p {
   color: #acabab !important;
 }
 @media screen and (max-width: 576px) {
   .experiences h1 {
-    font-size: 3.5rem !important;
+    font-size: 2.5rem !important;
   }
 }
-.experiences .experience {
+.experiences .title {
+  display: flex;
+  align-items: end;
+}
+.experiences .video-box video {
+  width: 100%;
+}
+.experiences .title-box {
+  width: 80%;
+}
+.experiences .video-box {
+  width: 20%;
+}
+@media screen and (max-width: 992px) {
+  .experiences .title-box {
+    width: 70%;
+  }
+  .experiences .video-box {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+	.experiences .title-box {
+    width: 40%;
+  }
+  .experiences .video-box {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .experiences .title-box {
+    width: 40%;
+  }
+  .experiences .video-box {
+    width: 60%;
+  }
+}
+.experiences .accordion-item { background-color: transparent; }
+.experiences .accordion-button, .experiences button {
+  width: 100%;
+  border: none;
   border-bottom: 1px #acabab solid;
+  background-color: transparent !important;
+  display: block;
+  padding: 1rem 0 0 0;
+
+}
+.experiences .accordion-button:focus {
+  border-bottom: 1px #acabab solid;
+  box-shadow: none;
 }
 .experiences .role {
   float: left;
@@ -133,6 +257,10 @@
 .experiences .role h2 {
   font-size: 2.5rem !important;
   color: #acabab !important;
+  font-weight: normal !important;
+}
+.experiences p {
+  font-weight: normal !important;
 }
 .experiences .duration {
   float: right;
@@ -141,7 +269,7 @@
 .experiences .experience:hover h2 {
   color: white !important;
 }
-.experiences .experience:hover p {
+.experiences .experience:hover p, .experiences .accordion-body p {
   color: #bee5e7 !important;
 }
 @media screen and (max-width: 576px) {

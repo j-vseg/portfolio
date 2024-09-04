@@ -15,7 +15,7 @@
   padding: 0 2rem 0 2rem;
 }
 .horizontal-scroll h1, .horizontal-scroll-sm h1 {
-  font-size: 5rem !important;
+  font-size: 4rem !important;
 }
 @media screen and (max-width: 576px) {
   .p-100 { 
@@ -23,7 +23,7 @@
     padding-bottom: 50px;
   }
   .horizontal-scroll h1, .horizontal-scroll-sm h1 {
-    font-size: 3.5rem !important;
+    font-size: 2.5rem !important;
   }
 }
 .horizontal-scroll .panel.description p, 
@@ -93,6 +93,10 @@
 .panel-sm .project.vegiscan {
   background-color: #416446;
 }
+.panel .project.qg-eventech,
+.panel-sm .project.qg-eventech {
+  background-color: rgb(16, 16, 71);
+}
 @media screen and (max-width: 768px) {
 	.horizontal-scroll .panel .project {
 		width: 80dvw;
@@ -119,6 +123,10 @@
 .panel .project.vegiscan:hover,
 .panel-sm .project.vegiscan:hover {
   background-color: #56845D;
+}
+.panel .project.qg-eventech:hover,
+.panel-sm .project.qg-eventech:hover {
+  background-color: rgb(22, 22, 97);
 }
 .panel .project:hover ~ .panel .project:not(:hover),
 .panel-sm .project:hover ~ .panel-sm .project:not(:hover) {
@@ -151,7 +159,7 @@
 .panel .img-box, .panel-sm .img-box {
 	display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   border-radius: 1rem 1rem 0 0;
   overflow: hidden;
   width: 100%;
@@ -183,9 +191,19 @@
 	background-color: #213724;
   border-radius: 1rem;
 }
+
+.project.project.qg-eventech .visit-hover .link a:hover{
+	background-color: rgb(13, 13, 45);
+  border-radius: 1rem;
+}
 .panel .project:hover .visit,
 .panel-sm .project:hover .visit {
 	display: none;
+}
+@media screen and (max-width: 576px) {
+  .visit-hover .link p {
+    display: none;
+  }
 }
 
 /* Draggable slider */
@@ -244,6 +262,18 @@
   border-radius: 100%;
   background: radial-gradient(#691ee2 55%, #decaff 100%);
   animation: purple-flicker 4s ease-in-out infinite;
+}
+@media screen and (max-width: 430px) {
+  .skillset .content {
+    width: 100vw;
+    height: 100vw;
+  }
+  .skillset .content .content-box h1 {
+    font-size: 20px !important;
+  }
+  .skillset .content .content-box p {
+    font-size: 15px !important;
+  }
 }
 .skillset .content .content-box{
   display: none;

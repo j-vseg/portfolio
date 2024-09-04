@@ -32,23 +32,39 @@
 
   <!-- Showcase -->
   <link rel="stylesheet" href="pages/index/showcase/showcase.css">
-  </head>
+  
+  <!-- Multi language -->
+  <script defer src="language/language.js"></script>
+
+</head>
 <body id="body">
 
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html#showcase">Works</a></li>
-      <li><a href="index.html#skills">Skills</a></li>
-      <li><a href="index.html#experience">Experience</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div id="df-alert" class="justify-content-center align-items-center">
+    <div class="alert">
+      <h1 id="alert-header">Select your preferred langauge:</h1>
+      <div class="btn-box d-flex">
+        <button id="alertBtnLangEn" class="dropdown-item" type="button"><img src="assets/icons/united-states.png" alt=""></button>
+        <button id="alertBtnLangNl" class="dropdown-item" type="button"><img src="assets/icons/netherlands.png" alt=""></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <nav class="navbar">
+      <ul>
+        <li><a id="lang_works" href="index.html#showcase">Works</a></li>
+        <li><a id="lang_skills" href="index.html#skills">Skills</a></li>
+        <li><a id="lang_experience" href="index.html#experience">Experience</a></li>
+        <li><a id="lang_contact" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <div id="header" class="container header">
     <div class="row d-flex align-items-center justify-content-center content">
       <div class="col-9">
         <div class="title-box">
-          <h1 class="title" id="title_name">I am <span class="secondary">Janne</span></h1>
+          <h1 class="title" id="title_name lang_title_header">I am <span class="secondary">Janne</span></h1>
           <svg version="1.1" id="cat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="192.5px" height="151.5px" viewBox="0 0 542.5 501.5" enable-background="new 0 0 542.5 501.5" xml:space="preserve">
             <path id="rightEarShadow" fill="#656565" stroke="#656565" stroke-width="10" stroke-miterlimit="10" d="M470.6,214.7c-1.1-2.1-8.3-4.3,2-9.7c10.3-5.4,34.2-11.8,35.3-9.7s-6.4,8.2-16.6,13.5C480.9,214.2,471.7,216.8,470.6,214.7z"/>
             <path id="leftEarShadow" fill="#656565" stroke="#656565" stroke-width="10" stroke-miterlimit="10" d="M459.4,218.7c-1.6-1.8-13.2-1.8-4.4-9.5s34.5-20,36-18.2c1.6,1.8-4.2,9.4-13,17.1S461,220.5,459.4,218.7z"/>
@@ -69,11 +85,11 @@
             </g>
           </svg>
         </div>
-        <h1 class="profession"><span class="secondary">Software</span> and <span class="secondary">Mobile developer</span></h1>
-        <p class="description">I am a HBO ICT Student at Fontys in Eindhoven. I am studying <b>Software</b> and specialized in <b>Mobile development</b>.</p>
+        <h1 class="profession" id="lang_profession"><span class="secondary">Software</span> and <span class="secondary">Mobile developer</span></h1>
+        <p class="description" id="lang_description">I am a HBO ICT Student at Fontys in Eindhoven. I am studying <b>Software</b> and specialized in <b>Mobile development</b>.</p>
         <p class="links">
           <a href="https://www.linkedin.com/in/janne-van-seggelen-58b56b268/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://gitlab.com/katjaaa_1"><i class="fa-brands fa-gitlab"></i></a>
+          <a href="https://github.com/j-vseg"><i class="fa-brands fa-gitlab"></i></a>
           <a href="mailto:vanseggelenjanne@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </p>
       </div>
@@ -86,8 +102,8 @@
     <div id="horizontal-scroll" class="horizontal-scroll">
       <div class="panels">
         <section class="panel description">
-          <h1>Selected <span class="secondary">Works</span></h1>
-          <p>I have played an important role in developing impactful projects. Here's a curated selection showcasing my expertise and achieved results.</p>
+          <h1 id="lang_title_works">Selected <span class="secondary">Works</span></h1>
+          <p id="lang_description_works">I have played an important role in developing impactful projects. Here's a curated selection showcasing my expertise and achieved results.</p>
         </section>
 
 
@@ -100,8 +116,8 @@
             <div class="visit-hover">
               <p class="client">Stolpersteine</p>
               <div class="link">
-                <a href="https://gitlab.com/katjaaa_1/portfolio/-/tree/main/Android">
-                  <p>Visit Code base</p>
+                <a href="https://github.com/j-vseg/portfolio/tree/main/Android" target="_blank">
+                  <p id="lang_visit_code_base">Visit Code base</p>
                   <img src="assets/icons/arrow-up-right-from-square-solid.svg" alt="Link to Code Base">
                 </a>              
               </div>
@@ -121,8 +137,8 @@
             <div class="visit-hover">
               <p class="client">Weatheristics</p>
               <div class="link">
-                <a href="https://gitlab.com/katjaaa_1/portfolio/-/tree/main/PWA">
-                  <p>Visit Code base</p>
+                <a href="https://github.com/j-vseg/portfolio/tree/main/PWA" target="_blank">
+                  <p id="lang_visit_code_base">Visit Code base</p>
                   <img src="assets/icons/arrow-up-right-from-square-solid.svg" alt="Link to Code Base">
                 </a>               
               </div>
@@ -142,14 +158,34 @@
             <div class="visit-hover">
               <p class="client">VegiScan</p>
               <div class="link">
-                <a href="https://gitlab.com/katjaaa_1/portfolio/-/tree/main/iOS">
-                  <p>Visit Code base</p>
+                <a href="https://github.com/j-vseg/portfolio/tree/main/iOS" target="_blank">
+                  <p id="lang_visit_code_base">Visit Code base</p>
                   <img src="assets/icons/arrow-up-right-from-square-solid.svg" alt="Link to Code Base">
                 </a>  
               </div>
             </div>
             <div class="img-box">
               <video autoplay muted loop class="img-fluid" src="assets/projects/vegiscan/vegiscan-demo.mp4"></video>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="project qg-eventech">
+            <div class="visit">
+              <p class="client">QG Eventech</p>
+            </div>
+            <div class="visit-hover">
+              <p class="client">QG Eventech</p>
+              <div class="link">
+                <a href="http://www.qgeventech.com/" target="_blank">
+                  <p id="lang_visit_website">Visit website</p>
+                  <img src="assets/icons/arrow-up-right-from-square-solid.svg" alt="Link to website">
+                </a>  
+              </div>
+            </div>
+            <div class="img-box">
+              <img class="img-fluid" src="assets/projects/qg-eventech-mockup.png" alt="Mockup of the QG Eventech website">
             </div>
           </div>
         </section>
@@ -159,9 +195,9 @@
     <div id="horizontal-scroll-sm" class="horizontal-scroll-sm container-fluid">
       <div class="panels-sm row g-4">
         <section class="panel-sm description col-md-6">
-          <h1>Selected</h1>
-          <h1 class="secondary">Works</h1>
-          <p>I have played an important role in developing impactful projects. Here's a curated selection showcasing my expertise and achieved results.</p>
+          <h1 id="lang_title_works_mobile1">Selected</h1>
+          <h1 id="lang_title_works_mobile2" class="secondary">Works</h1>
+          <p id="lang_description_works">I have played an important role in developing impactful projects. Here's a curated selection showcasing my expertise and achieved results.</p>
         </section>
 
         <section class="panel-sm col-md-6">
@@ -173,8 +209,8 @@
             <div class="visit-hover">
               <p class="client">Stolpersteine</p>
               <div class="link">
-                <a href="https://gitlab.com/katjaaa_1/portfolio/-/tree/main/Android">
-                  <p>Visit Code base</p>
+                <a href="https://github.com/j-vseg/portfolio/tree/main/Android" target="_blank">
+                  <p id="lang_visit_code_base">Visit Code base</p>
                   <img src="assets/icons/arrow-up-right-from-square-solid.svg" alt="Link to Code Base">
                 </a>              
               </div>
@@ -194,8 +230,8 @@
             <div class="visit-hover">
               <p class="client">Weatheristics</p>
               <div class="link">
-                <a href="https://gitlab.com/katjaaa_1/portfolio/-/tree/main/PWA">
-                  <p>Visit Code base</p>
+                <a href="https://github.com/j-vseg/portfolio/tree/main/PWA" target="_blank">
+                  <p id="lang_visit_code_base">Visit Code base</p>
                   <img src="assets/icons/arrow-up-right-from-square-solid.svg" alt="Link to Code Base">
                 </a>               
               </div>
@@ -215,14 +251,34 @@
             <div class="visit-hover">
               <p class="client">VegiScan</p>
               <div class="link">
-                <a href="https://gitlab.com/katjaaa_1/portfolio/-/tree/main/iOS">
-                  <p>Visit Code base</p>
+                <a href="https://github.com/j-vseg/portfolio/tree/main/iOS" target="_blank">
+                  <p id="lang_visit_code_base">Visit Code base</p>
                   <img src="assets/icons/arrow-up-right-from-square-solid.svg" alt="Link to Code Base">
                 </a>  
               </div>
             </div>
             <div class="img-box">
               <video autoplay muted loop class="img-fluid" src="assets/projects/vegiscan/vegiscan-demo.mp4"></video>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-sm col-md-6">
+          <div class="project qg-eventech">
+            <div class="visit">
+              <p class="client">QG Eventech</p>
+            </div>
+            <div class="visit-hover">
+              <p class="client">QG Eventech</p>
+              <div class="link">
+                <a href="http://www.qgeventech.com/" target="_blank">
+                  <p id="lang_visit_website">Visit website</p>
+                  <img src="assets/icons/arrow-up-right-from-square-solid.svg" alt="Link to website">
+                </a>  
+              </div>
+            </div>
+            <div class="img-box">
+              <img class="img-fluid" src="assets/projects/qg-eventech-mockup.png" alt="Mockup of the QG Eventech website">
             </div>
           </div>
         </section>
@@ -241,13 +297,20 @@
             <span>__</span>
             <span class="name">Jimmy Carr</span>
           </div>
-        </div>
+        </section>
       </div>
     </div>
 
     <div id="skills" class="container-fluid skillset">
       <div class="slider-wrapper">
-        <h1 class="mb-5">My Skillset</h1>
+        <div class="title">
+          <div class="title-box">
+            <h1 id="lang_title_skillset" class="mb-5">My Skillset</h1>
+          </div>
+          <div class="video-box">
+            <video src="assets/drag_me_arrow.webm" autoplay muted loop></video>
+          </div>
+        </div>
         <div class="slides-container">
           <div class="slide">
             <img src="assets/icons/skills/html.svg" alt="HTML logo">
@@ -293,55 +356,55 @@
           <div class="content-box">
             <h2>HTML</h2>
             <h3>Semantic Markup</h3>
-            <p>Beyond markup, HTML is crucial for an inclusive web. I structure content carefully for universal accessibility. </p>
+            <p id="lang_html">Beyond markup, HTML is crucial for an inclusive web. I structure content carefully for universal accessibility. </p>
           </div>
           <div class="content-box">
-            <h2>CCS</h2>
+            <h2>CSS</h2>
             <h3>Creative styling</h3>
-            <p> CSS shapes the aesthetic and interactive facets of the web. I sculpt digital experiences with precision, infusing creativity and elegance into every design.</p>
+            <p id="lang_css">CSS shapes the aesthetic and interactive facets of the web. I sculpt digital experiences with precision, infusing creativity and elegance into every design.</p>
           </div>
           <div class="content-box">
             <h2>Bootstrap</h2>
             <h3>Responsive designs</h3>
-            <p>Bootstrap empowers me to create an inclusive web. I customize designs with care to ensure responsiveness for all my websites.</p>
+            <p id="lang_bootstrap">Bootstrap empowers me to create an inclusive web. I customize designs with care to ensure responsiveness for all my websites.</p>
           </div>
           <div class="content-box">
             <h2>JavaScript</h2>
             <h3>Vanilla, jQuery</h3>
-            <p>I bring websites to life with JavaScript, adding interactive features and optimizing performance with clean and efficient code.</p>
+            <p id="lang_javascript">I bring websites to life with JavaScript, adding interactive features and optimizing performance with clean and efficient code.</p>
           </div>
           <div class="content-box">
             <h2>C#</h2>
             <h3>Powerful applications</h3>
-            <p>C# empowers me to build powerful and scalable applications. I architect solutions that seamlessly integrate with various systems, driving efficiency and innovation.</p>
+            <p id="lang_c">C# empowers me to build powerful and scalable applications. I architect solutions that seamlessly integrate with various systems, driving efficiency and innovation.</p>
           </div>
           <div class="content-box">
             <h2>Java</h2>
             <h3>Robust</h3>
-            <p>Java fuels the engines of large-scale applications. I engineer robust software systems that are reliable, efficient, and scalable.</p>
+            <p id="lang_java">Java fuels the engines of large-scale applications. I engineer robust software systems that are reliable, efficient, and scalable.</p>
           </div>
           <div class="content-box">
             <h2>React</h2>
             <h3>Immersive digital experiences</h3>
-            <p>React revolutionizes frontend development, offering a seamless and efficient way to build user interfaces. I leverage its flexibility to create immersive digital experiences.</p>
+            <p id="lang_react">React revolutionizes frontend development, offering a seamless and efficient way to build user interfaces. I leverage its flexibility to create immersive digital experiences.</p>
           </div>
           <div class="content-box">
             <h2>Flutter</h2>
             <h3>Cross platform</h3>
-            <p>Flutter redefines cross-platform app development with its seamless and expressive design. I harness its capabilities to craft visually stunning and highly performant applications that delight users across devices.</p>
+            <p id="lang_flutter">Flutter redefines cross-platform app development with its seamless and expressive design. I harness its capabilities to craft visually stunning and highly performant applications that delight users across devices.</p>
           </div>
           <div class="content-box">
             <h2>Progressive Web Apps</h2>
             <h3>Lightweight</h3>
-            <p>PWAs represent the future of online experiences. I craft lightweight and responsive apps that blur the line between web and native, delivering a seamless experience across devices.</p>
+            <p id="lang_pwa">PWAs represent the future of online experiences. I craft lightweight and responsive apps that blur the line between web and native, delivering a seamless experience across devices.</p>
           </div>
           <div class="content-box">
             <h2>Android (Kotlin)</h2>
-            <p> Android empowers developers to create innovative and engaging apps. I design intuitive user interfaces and leverage native functionalities to deliver exceptional experiences.</p>
+            <p id="lang_android">Android empowers developers to create innovative and engaging apps. I design intuitive user interfaces and leverage native functionalities to deliver exceptional experiences.</p>
           </div>
           <div class="content-box">
             <h2>Apple (Swift)</h2>
-            <p> I develop apps that leverage the full potential of iOS and macOS, delivering a premium experience to users.</p>
+            <p id="lang_apple">I develop apps that leverage the full potential of iOS and macOS, delivering a premium experience to users.</p>
           </div>
         </div>
         <div id="circle2"></div>
@@ -349,28 +412,77 @@
     </div>
 
     <div id="experience" class="experiences">
-      <h1>Experience</h1>
-      <h1 class="secondary">History</h1>
-      <p>For now, still studying! </p>
-      <div class="row mt-5">
-        <div class="col-12 experience mb-4">
-          <div class="role">
-            <h2>Intern</h2>
-            <p>Signify</p>
-          </div>
-          <div class="duration">
-            <p>September 2023 - January 2024</p>
-            <p>Hybrid</p>
-          </div>
+      <div class="title">
+        <div class="title-box mb-5">
+          <h1 id="lang_experience">Experience</h1>
+          <h1 id="lang_history" class="secondary">History</h1>
+          <p id="lang_description_experience">For now, still studying!</p>
         </div>
-        <div class="col-12 experience">
-          <div class="role">
-            <h2>Intern</h2>
-            <p>RenewMyID</p>
-          </div>
-          <div class="duration">
-            <p>May 2021 - September 2021</p>
-            <p>On-site</p>
+        <div class="video-box">
+          <video src="assets/click_me_arrow.webm" autoplay muted loop></video>
+        </div>
+        <div id="circle2"></div>
+      </div>
+      <div class="row">
+        <div class="col-12 mb-4">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="experience accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseOne">
+                  <div class="role">
+                    <h2 id="lang_intern">Intern</h2>
+                    <p>Signify</p>
+                  </div>
+                  <div class="duration">
+                    <p id="lang_stay_signify">September 2023 - January 2024</p>
+                    <p>Hybrid</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <h2 id="lang_description_of_job">Description of the job</h2>
+                  <p id="lang_description_job_signify">As an <b>accessibility intern</b> at <b>Signify</b>, I had the unique opportunity to contribute to the enhancement of the Philips Hue app, focusing on improving its accessibility for users with disabilities. My role involved a combination of accessibility audits, feature implementation, user testing, and collaboration with various teams to ensure the app was more inclusive and user-friendly.</p>
+                  
+                  <h3 id="lang_key_responsibilities">Key responsibilities</h3>
+                  <ul>
+                    <li id="lang_key1_signify">Conducting research towards the Signify users & their issues/needs</li>
+                    <li id="lang_key2_signify">Documenting and reporting found accessibility issues</li>
+                    <li id="lang_key3_signify">User testing and feedback collection</li>
+                    <li id="lang_key4_signify">Team collaboration</li>
+                    <li id="lang_key5_signify">Implementation of new accessibility features into the Hue app</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class=" experience collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwo">
+                  <div class="role">
+                    <h2 id="lang_intern">Intern</h2>
+                    <p>RenewMyID</p>
+                  </div>
+                  <div class="duration">
+                    <p id="lang_stay_renew">May 2021 - September 2021</p>
+                    <p id="lang_on_site">On-site</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <h2 id="lang_description_of_job">Description of the job</h2>
+                  <p id="lang_description_job_renew">As an <b>intern</b> at <b>RenewMyID</b>, I completed various design tasks for clients. I utilized a range of technologies including WordPress, HTML, SCSS, Bootstrap, and PHP to deliver effective and visually appealing solutions.</p>
+                  
+                  <h3 id="lang_key_responsibilities">Key responsibilities</h3>
+                  <ul>
+                    <li id="lang_key1_renew">Developing and maintaining websites using WordPress</li>
+                    <li id="lang_key2_renew">Creating and styling web pages with HTML and SCSS</li>
+                    <li id="lang_key3_renew">Implementing responsive design using Bootstrap</li>
+                    <li id="lang_key4_renew">Enhancing website functionality with PHP</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -387,29 +499,43 @@
           <a class="email" href="mailto:vanseggelenjanne@gmail.com">vanseggelenjanne@gmail.com</a>
           <div class="links pt-5">
             <a href="https://www.linkedin.com/in/janne-van-seggelen-58b56b268/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://gitlab.com/katjaaa_1"><i class="fa-brands fa-gitlab"></i></a>
+            <a href="https://github.com/j-vseg"><i class="fa-brands fa-gitlab"></i></a>
             <a href="mailto:vanseggelenjanne@gmail.com"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
       </div> 
-      <div class="row contents">
+      <div class="row contents mt-3">
         <div class="col-md-4 col-sm-6">
           <a href="index.html#showcase">
-            <h1>Works</h1>
-            <p>Here's a curated selection showcasing my expertise and the achieved results.</p>
+            <h1 id="lang_works">Works</h1>
+            <p id="lang_contact_works_description">Here's a curated selection showcasing my expertise and the achieved results.</p>
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
           <a href="index.html#skills">
-            <h1>Skills</h1>
-            <p>Check out the things I'm good at, from building websites to design and more.</p>
+            <h1 id="lang_skills">Skills</h1>
+            <p id="lang_contact_skills_experience_description">Check out the things I'm good at, from building websites to design and more.</p>
           </a>
         </div>
         <div class="col-md-4 col-sm-6">
           <a href="index.html#experience">
-            <h1>Experience</h1>
-            <p>Check out the things I'm good at, from building websites to design and more.</p>
+            <h1 id="lang_experience">Experience</h1>
+            <p id="lang_contact_skills_experience_description">Check out the things I'm good at, from building websites to design and more.</p>
           </a>
+        </div>
+      </div>
+      <div class="language row d-flex justify-content-end">
+        <div class="d-flex justify-content-end align-items-center">
+          <p id="lang_adjust_language">Adjust language</p>
+          <div id="switch-language" class="dropup">
+            <button id="btnLang" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/icons/united-states.png" alt="">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button id="btnLangEn" onclick="selectedLanguage('en')" class="dropdown-item" type="button"><img src="assets/icons/united-states.png" alt=""></button>
+              <button id="btnLangNl" onclick="selectedLanguage('nl')" class="dropdown-item" type="button"><img src="assets/icons/netherlands.png" alt=""></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

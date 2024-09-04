@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Languages](#languages)
 - [Features](#features)
 - [Demo](#demo)
 - [Designs](#designs)
@@ -11,7 +12,7 @@
 - [Credits](#credits)
 
 ## Description
-Weatheristics is an individual project I worked on for 4 weeks. I was asked to build a weather application. The application shows the weather and sends push-notification if it is about to rain.
+Weatheristics is an individual school project I worked on for 4 weeks. I was asked to build a weather application. The application shows the weather and sends push-notification if it is about to rain.
 
 ### Languages
 
@@ -22,9 +23,7 @@ Weatheristics is an individual project I worked on for 4 weeks. I was asked to b
 </p>
 
 ## Demo
-<p float="left">
-    <img src="../Portfolio/assets/projects/weatheristics/weatheristics.mp4" width="250" />
-</p>
+[Demo](../Portfolio/assets/projects/weatheristics/weatheristics.mp4)
 
 ## Designs
 <p float="left">
@@ -38,7 +37,6 @@ Weatheristics is an individual project I worked on for 4 weeks. I was asked to b
 - Be able to get weather information from our cities
 - Be able to send push notifications when it is about to rain or snow
 
-
 ## Installation
 You can open the application in Visual Studio Code and run npm install in the root of the project to install all the needed packages.
 ```
@@ -48,4 +46,3 @@ npm install
 ## Credits 
 Used libraries:
 - [Open Weather API](https://openweathermap.org/api): I used this API to retrieve all the weather data.
-

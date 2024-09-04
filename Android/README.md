@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Languages](#languages)
 - [Features](#features)
 - [Demo](#demo)
 - [Designs](#designs)
@@ -18,7 +19,6 @@ Stolpersteine are memorial stones that are placed by Stichting 18 September. The
 I was tasked by creating the Android version for the Stolpersteine app. Other members of the group were tasked with creating the PWA and iOS version. 
 
 ### Languages
-
 <p float="left">
     <img src="../Portfolio/assets/icons/skills/android.svg" width="35" />
 </p>
@@ -32,9 +32,7 @@ I was tasked by creating the Android version for the Stolpersteine app. Other me
 - Your able to switch between languages
 
 ## Demo
-<p float="left">
-  <img src="../Portfolio/assets/projects/stolpersteine/stolpersteine.mp4" width="250" />
-</p>
+[Demo](../Portfolio/assets/projects/stolpersteine/stolpersteine.mp4)
 
 ## Designs
 <p float="left">
